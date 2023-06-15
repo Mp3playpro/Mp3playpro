@@ -1,0 +1,1454 @@
+
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=function(){var e=0,i=0,t=[],n=!1,o=[],s=[],r=!0,a=function(e,i,n,o,s,r,a){var l=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,c=this;this.name=e,this.funcName=i,this.parameters=null===n?null:p(n)?n:[n],this.isBlock=o,this.blockedBy=s,this.deleteWhenComplete=r,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.fWindow=l,this.isTimeDelay=!1,this.process=function(){f("... func = "+e),c.isInitialized=!0,c.isComplete=!0,f("... func.apply: "+e);var i=c.funcName.split("."),n=null,o=this.fWindow||window;i.length>3||(n=3===i.length?o[i[0]][i[1]][i[2]]:2===i.length?o[i[0]][i[1]]:o[c.funcName]),null!=n&&n.apply(null,this.parameters),!0===c.deleteWhenComplete&&delete t[e],!0===c.isBlock&&(f("----- F'D: "+c.name),u())}},l=function(e,i,t,n,o,s,r){var a=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,l=this;this.name=e,this.path=i,this.async=o,this.defer=s,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=r,this.fWindow=a,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)?window.__ezScriptHost+e:e},this.process=function(){l.isInitialized=!0,f("... file = "+e);var i=this.fWindow?this.fWindow.document:document,t=i.createElement("script");t.src=this.getSrc(this.path),!0===o?t.async=!0:!0===s&&(t.defer=!0),t.onerror=function(){f("----- ERR'D: "+l.name),l.isError=!0,!0===l.isBlock&&u()},t.onreadystatechange=t.onload=function(){var e=t.readyState;f("----- F'D: "+l.name),e&&!/loaded|complete/.test(e)||(l.isComplete=!0,!0===l.isBlock&&u())},i.getElementsByTagName("head")[0].appendChild(t)}},c=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function d(e){!0!==h(e)&&0!=r&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return f(e.name+" blocked = TIME DELAY!"),!0;if(p(e.blockedBy))for(var i=0;i<e.blockedBy.length;i++){var o=e.blockedBy[i];if(!1===t.hasOwnProperty(o))return f(e.name+" blocked = "+o),!0;if(!0===e.proceedIfError&&!0===t[o].isError)return!1;if(!1===t[o].isComplete)return f(e.name+" blocked = "+o),!0}return!1}function f(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function u(){++e>200||(f("let's go"),m(o),m(s))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?f(t.name+": error"):!0===t.isComplete?f(t.name+": complete already"):!0===t.isInitialized&&f(t.name+": initialized already"):t.process()}}function p(e){return"[object Array]"==Object.prototype.toString.call(e)}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,f("TDELAY -----"),u()}),5e3)}),!1),{addFile:function(e,i,n,r,a,c,h,f,u){var m=new l(e,i,n,r,a,c,h,u);!0===f?o[e]=m:s[e]=m,t[e]=m,d(m)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,f(e+" ...  FILE! TDELAY"),s[e]=n,t[e]=n,d(n)},addFunc:function(e,n,r,l,c,h,f,u,m,p){!0===h&&(e=e+"_"+i++);var y=new a(e,n,r,l,c,f,u,p);!0===m?o[e]=y:s[e]=y,t[e]=y,d(y)},addDelayFunc:function(e,i,n){var o=new a(e,i,n,!1,[],!0,!0);o.isTimeDelay=!0,f(e+" ...  FUNCTION! TDELAY"),s[e]=o,t[e]=o,d(o)},items:t,processAll:u,setallowLoad:function(e){r=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?f(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new c(e,!0);f("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};!function(){var e;__ez.vep=(e=[],{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("/detroitchicago/grapefruit.gif")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer></script>
+<title>Download Lattest Popular Songs easily | mp3play.store</title>
+<meta name="keywords" content="download lattest mp3 songs, mp3 download, popular mp3 songs download, lattest mp3 songs download, essy mp3 songs download"/>
+<meta name="description" content="Download Mp3play New Bollywood Mp3 Songs, Punjabi, Indipop Songs, New Dj Remix and Latest High Quality Mobile mp3 Songs Download"/>
+<meta property="og:image" content="static.mp3play.com/mobile/static/imgs/screen1.jpg"/>
+<link rel="canonical" href="https://mp3play.store/"/>
+<link rel="alternate" href="https://mp3play.store/" hreflang="x-default"/>
+<link rel="alternate" href="https://mp3play.store/" hreflang="en"/>
+<meta property="og:site_name" content="mp3play"/>
+<meta property="og:title" content="Download Lattest Popular Songs easily | mp3play.store"/>
+<meta property="og:type" content="website"/>
+<meta name="theme-color" content="#23a86b"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="apple-mobile-web-app-title" content="mp3play"/>
+<meta name="format-detection" content="telephone=no"/>
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4560230436799571" crossorigin="anonymous"></script>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-7S57TW919W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7S57TW919W');
+</script>
+<meta name="dmca-site-verification" content="azZUdDN6ekNYMTF0WS95b1F4QzhCKzJEeWhnZmhXa3R3MHUzY3d2QlROVT01"/>
+<meta name="google-site-verification" content="5KcCFSC0SPWx663UmJ66qnX4s5X9S-tBzxu_v1gyoDE"/>
+<script>
+        (function () {
+            function getCookie(b){var f=b+"=";var a=document.cookie.split(";");for(var d=0;d<a.length;d++){var e=a[d];while(e.charAt(0)==" "){e=e.substring(1,e.length)}if(e.indexOf(f)==0){return e.substring(f.length,e.length)}}return null}
+            function setCookie(d,e,h,a,g){var f=d+"="+e;if(h){var b=new Date();b.setTime(b.getTime()+(h*24*60*60*1000));f+="; expires="+b.toGMTString()}f+="; path=/";if(a){f+="; domain="+a}if(g){f+="; secure"}document.cookie=f};
+            window.nextBymp3play = function (u) {if(u){setCookie("mp3play__next", u, 300, 'mp3play.com');}};
+            window.closeMenu=function closeMenu(hasGoHistory){var b=document;if (!hasGoHistory) {history.go(-1);}if(b.getElementsByClassName("ar_fix").length>0){b.getElementById("menu").style.right="-270px"}else{b.getElementById("menu").style.left="-270px"}b.getElementById("shadow").style.display="none";b.getElementsByTagName("body")[0].style["overflow-y"]="auto";b.getElementsByTagName("html")[0].style["overflow-y"]="auto"};window.openMenu=function openMenu(){var b=document;location.hash="menu";if(b.getElementsByClassName("ar_fix").length>0){b.getElementById("menu").style.right="0"}else{b.getElementById("menu").style.left="0"}b.getElementById("shadow").style.display="block";b.getElementsByTagName("body")[0].style["overflow-y"]="hidden";b.getElementsByTagName("html")[0].style["overflow-y"]="hidden"; if(!document.getElementsByClassName('menu-icon')[0].style['background-image'].length > 0) {var ms = document.querySelectorAll('#menu span.menu-icon'); for(var i =0; i<ms.length; i++){ms[i].setAttribute("style", "background-image:url(static.mp3play.com/mobile/static/imgs/menu_v5.png)");}}};
+            Redirect={getLangCookie:function(){return getCookie("mp3play__lang")},setLangCookie:function(a){setCookie("mp3play__lang",a,300,"mp3play.com")},isMainURL:function(){return Redirect.lang()==="en"&&'true'==="true"},lang:function(){return"en"},isShowLangTip:false,langGoll:"",langGoUrl:"",prefix:"https://m.mp3playmod",getQueryString:function(a){var b=new RegExp("(^|&)"+a+"=([^&]*)(&|$)","i");var c=location.search.substr(1).match(b);if(c!=null){return unescape(decodeURI(c[2]))}return null},getRedirectUrl:function(d){var c="";if(Redirect.getQueryString('utm_source')==="pwa"){c="?utm_source=pwa&utm_medium=homesceen&utm_campaign=webapp&launcher=true"}return Redirect.prefix+"/"+d+"/"+c},isBetaLang:function(a){return[].indexOf(a)!==-1?true:false},getNavigatorLang:function(){return Redirect.translateLang(navigator.language)},translateLang:function(a){if(a=="en"||a.indexOf("en-")>=0){return"en"}else{if(a=="br"||a=="pt"||a.indexOf("pt-")>=0){return"br"}else{if(a=="zh-TW"){return"tw"}else{if(a=="cn"||a.indexOf("zh")>=0||a.indexOf("cn-")>=0||a.indexOf("zh-")>=0){return"cn"}else{if(a=="ar"||a.indexOf("ar-")>=0){return"ar"}else{if(a=="jp"||a.indexOf("jp-")>=0||a=="ja"||a.indexOf("ja-")>=0){return"jp"}else{if(a=="es"||a.indexOf("es-")>=0){return"es"}else{if(a=="ru"||a.indexOf("ru-")>=0){return"ru"}else{if(a=="in"||a.indexOf("in-")>=0){return"in"}else{if(a=="id"||a.indexOf("id-")>=0){return"id"}else{if(a=="it"||a.indexOf("it-")>=0){return"it"}else{if(a=="nl"||a.indexOf("nl-")>=0){return"nl"}else{if(a=="pl"||a.indexOf("pl-")>=0){return"pl"}else{if(a=='de'||a.indexOf('de-')>=0){return "de"}else{if(a=='vi'||a.indexOf('vi-')>=0){return "vn"}else{if(a=='fr'||a.indexOf('fr-') >=0){return "fr"}else{if(a=='tr'||a.indexOf('tr-') >=0){return "tr"}else{if(a=='ko'||a.indexOf('ko-') >=0){return "kr"}else{if(a=='ms'||a.indexOf('ms-') >=0){return "ms"}else{if(a=='th'||a.indexOf('th-') >=0){return "th"}else{if(a=='ur'||a.indexOf('ur-') >=0){return "ur"}else{if(a=='bn'||a.indexOf('bn-') >=0){return "bn"}else{return "en"}}}}}}}}}}}}}}}}}}}}}}},check:function(){var b=Redirect.getLangCookie();if(!b){if(!Redirect.isMainURL()){Redirect.setLangCookie(Redirect.lang())}else{var a=Redirect.getNavigatorLang();if(Redirect.isBetaLang(a)){Redirect.isShowLangTip=true;Redirect.langGoll=a;Redirect.langGoUrl=Redirect.getRedirectUrl(a)}else{Redirect.setLangCookie(a);Redirect.run(Redirect.getLangCookie())}}}else{if(b==="menu"){Redirect.setLangCookie(Redirect.lang())}else{if(Redirect.isMainURL()){Redirect.run(b)}}}},run:function(a){if(a&&a!=="en"){location.href=Redirect.getRedirectUrl(a)}}};
+            Redirect.check();
+            window.policy_review = {effective:'20180525',isReview:function(){return getCookie("mp3play__policy_review") != policy_review.effective},setReview:function (){setCookie("mp3play__policy_review",policy_review.effective,300,"mp3play.com");document.getElementById('policy-info').style.display='none'}};
+            window.sampleBymp3play={init:function(){var e=getCookie("mp3play__sample");if(e)window.sampleBymp3play.setFlag(e);else{var p=Math.random();setCookie("mp3play__sample",p,1,"mp3play.com"),window.sampleBymp3play.setFlag(p)}},setFlag:function(e){Number(window.sampleBymp3play.rate)>Number(e)&&(window.sampleBymp3play.collect=!0)},collect:!1,rate:"0.001"};
+            window.sampleBymp3play.init();
+        })()
+    </script>
+   <!-- partial:index.partial.html -->
+
+    <!-- Cookie Banner -->
+    <link rel="stylesheet" href="cookiebanner.style.css"/>
+    <script src="cookiebanner.script.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+<link rel="apple-touch-icon" sizes="57x57" href="fav/apple-icon-57x57.png"/>
+<link rel="apple-touch-icon" sizes="60x60" href="fav/apple-icon-60x60.png"/>
+<link rel="apple-touch-icon" sizes="72x72" href="fav/apple-icon-72x72.png"/>
+<link rel="apple-touch-icon" sizes="76x76" href="fav/apple-icon-76x76.png"/>
+<link rel="apple-touch-icon" sizes="114x114" href="fav/apple-icon-114x114.png"/>
+<link rel="apple-touch-icon" sizes="120x120" href="fav/apple-icon-120x120.png"/>
+<link rel="apple-touch-icon" sizes="144x144" href="fav/apple-icon-144x144.png"/>
+<link rel="apple-touch-icon" sizes="152x152" href="fav/apple-icon-152x152.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-icon-180x180.png"/>
+<link rel="icon" type="image/png" sizes="192x192" href="fav/android-icon-192x192.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="96x96" href="fav/favicon-96x96.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png"/>
+<link rel="manifest" href="fav/manifest.json"/>
+<meta name="msapplication-TileColor" content="#ffffff"/>
+<meta name="msapplication-TileImage" content="fav/ms-icon-144x144.png"/>
+<meta name="theme-color" content="#ffffff"/>
+<link rel="shortcut icon" href="static.mp3play.com/mobile/static/imgs/screen1.jpg"/>
+<link rel="preconnect" href="//a.mp3play.com"/>
+<link rel="dns-prefetch" href="//a.mp3play.com"/>
+<link rel="preconnect" href="//i.mp3play.com"/>
+<link rel="dns-prefetch" href="//i.mp3play.com"/>
+<link rel="preconnect" href="//image.winudf.com"/>
+<link rel="dns-prefetch" href="//image.winudf.com"/>
+<link rel="preconnect" href="//static.mp3play.com"/>
+<link rel="dns-prefetch" href="//static.mp3play.com"/>
+<link rel="preconnect" href="//download.mp3play.store"/>
+<link rel="dns-prefetch" href="//download.mp3play.store"/>
+<link rel="preconnect" href="//googleads.g.doubleclick.net"/>
+<link rel="dns-prefetch" href="//googleads.g.doubleclick.net"/>
+<link rel="preconnect" href="//www.googletagmanager.com"/>
+<link rel="dns-prefetch" href="//www.googletagmanager.com"/>
+<link rel="preconnect" href="//pagead2.googlesyndication.com"/>
+<link rel="dns-prefetch" href="//pagead2.googlesyndication.com"/>
+<link rel="preload" href="i.mp3play.com/user_v1002.js?hl=en&amp;mobile=1&amp;r=0.812738677038702" as="script"/>
+<link rel="preload" href="static.mp3play.com/mobile/static/js/jquery.3.6.0.min.js" crossorigin="anonymous" as="script"/>
+<link rel="preload" href="static.mp3play.com/mobile/static/js/lazyload-11.0.6.min.js" crossorigin="anonymous" as="script"/>
+<link rel="preload" href="static.mp3play.com/mobile/static/js/global_v1249.min.js" crossorigin="anonymous" as="script"/>
+<link rel="preload" href="a.mp3play.com/analytics_v1023.js" crossorigin="anonymous" as="script"/>
+<style type="text/css">
+  @import url("data:text/css;base64,W29uY2xpY2tdIHsNCiAgY3Vyc29yOiBwb2ludGVyOw0KfQ0KaHRtbCB7DQogIGZvbnQtc2l6ZTogMTZweDsNCn0NCg0KaW1nIHsNCiAgdmVydGljYWwtYWxpZ246IG1pZGRsZTsNCiAgZGlzcGxheTogaW5saW5lLWJsb2NrOw0KfQ0KYSB7DQogIGNvbG9yOiAjMzMzOw0KICB0ZXh0LWRlY29yYXRpb246IG5vbmU7DQp9DQpib2R5LA0KaDIsDQpociwNCmxpLA0KcCwNCnVsIHsNCiAgbWFyZ2luOiAwOw0KICBwYWRkaW5nOiAwOw0KfQ0KYm9keSwNCmh0bWwgew0KICBvdmVyZmxvdy14OiBoaWRkZW47DQp9DQphIHsNCiAgdGV4dC1kZWNvcmF0aW9uOiBub25lOw0KfQ0KbGksDQp1bCB7DQogIGxpc3Qtc3R5bGU6IG5vbmU7DQp9DQpodG1sIHsNCiAgZm9udC1zaXplOiA2Mi41JTsNCn0NCmJvZHkgew0KICBmb250LWZhbWlseTogIkhlbHZldGljYSBOZXVlIiwgSGVsdmV0aWNhLCBBcmlhbCwgc2Fucy1zZXJpZjsNCiAgZm9udC1zaXplOiAxLjRyZW07DQogIGJhY2tncm91bmQ6ICNmMmY1Zjk7DQogIGNvbG9yOiAjMDAwOw0KICBmb250LXNpemUtYWRqdXN0OiBub25lOw0KICAtd2Via2l0LXRleHQtc2l6ZS1hZGp1c3Q6IG5vbmU7DQogIC1tb3otdGV4dC1zaXplLWFkanVzdDogbm9uZTsNCiAgLW1zLXRleHQtc2l6ZS1hZGp1c3Q6IG5vbmU7DQp9DQppbWcgew0KICBib3JkZXI6IG5vbmU7DQogIHBhZGRpbmc6IDA7DQogIG1hcmdpbjogMDsNCiAgaW1hZ2UtcmVuZGVyaW5nOiAtbW96LWNyaXNwLWVkZ2VzOw0KICBpbWFnZS1yZW5kZXJpbmc6IC1vLWNyaXNwLWVkZ2VzOw0KICBpbWFnZS1yZW5kZXJpbmc6IC13ZWJraXQtb3B0aW1pemUtY29udHJhc3Q7DQogIC1tcy1pbnRlcnBvbGF0aW9uLW1vZGU6IG5lYXJlc3QtbmVpZ2hib3I7DQp9DQphLmJlYXV0aWZ5IHsNCiAgdGV4dC1kZWNvcmF0aW9uOiBub25lOw0KICBjb2xvcjogaW5oZXJpdDsNCiAgZm9udC13ZWlnaHQ6IGluaGVyaXQ7DQogIGZvbnQtc2l6ZTogaW5oZXJpdDsNCiAgZm9udC1zdHlsZTogaW5oZXJpdDsNCn0NCmEuYmVhdXRpZnk6bGluayB7DQogIHRleHQtZGVjb3JhdGlvbjogaW5oZXJpdDsNCiAgY29sb3I6IGluaGVyaXQ7DQogIGZvbnQtd2VpZ2h0OiBpbmhlcml0Ow0KICBmb250LXNpemU6IGluaGVyaXQ7DQogIGZvbnQtc3R5bGU6IGluaGVyaXQ7DQp9DQphLmJlYXV0aWZ5OnZpc2l0ZWQgew0KICB0ZXh0LWRlY29yYXRpb246IGluaGVyaXQ7DQogIGNvbG9yOiBpbmhlcml0Ow0KICBmb250LXdlaWdodDogaW5oZXJpdDsNCiAgZm9udC1zaXplOiBpbmhlcml0Ow0KICBmb250LXN0eWxlOiBpbmhlcml0Ow0KfQ0KLmZvbnQtY29tbW9uLWxpbmUtMSB7DQogIHdoaXRlLXNwYWNlOiBub3dyYXA7DQogIG92ZXJmbG93OiBoaWRkZW47DQogIHRleHQtb3ZlcmZsb3c6IGVsbGlwc2lzOw0KfQ0KLmNvbW1vbi10aXRsZSB7DQogIHBhZGRpbmc6IDAgMC44NzVyZW07DQogIGJhY2tncm91bmQ6ICNmZmY7DQp9DQouY29tbW9uLXRpdGxlIC5jb21tb24tdGl0bGUtY29udGVudCB7DQogIHBhZGRpbmc6IDAuOTM3NXJlbSAwOw0KICBkaXNwbGF5OiBmbGV4Ow0KICBhbGlnbi1pdGVtczogY2VudGVyOw0KICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47DQp9DQouY29tbW9uLXRpdGxlIC5jb21tb24tdGl0bGUtY29udGVudCAuY29tbW9uLXRpdGxlLWNvbnRlbnQtbmFtZSB7DQogIGZvbnQtc2l6ZTogMC44NzVyZW07DQogIGZvbnQtd2VpZ2h0OiA3MDA7DQogIGNvbG9yOiAjMjIyMjM2Ow0KICBkaXNwbGF5OiBmbGV4Ow0KICBhbGlnbi1pdGVtczogY2VudGVyOw0KfQ0KLmNvbW1vbi10aXRsZSAuY29tbW9uLXRpdGxlLWNvbnRlbnQgLmNvbW1vbi10aXRsZS1jb250ZW50LW5hbWUgPiBkaXYgew0KICBtYXgtd2lkdGg6IDIwcmVtOw0KfQ0KLmNvbW1vbi1yZWdpb25hbC1ibG9jay5jcm9zc3dpc2UtYmxvY2stY2Fyb3VzZWwgew0KICBiYWNrZ3JvdW5kOiAjZmZmOw0KICBvdmVyZmxvdzogaGlkZGVuOw0KfQ0KLmNvbW1vbi1yZWdpb25hbC1ibG9jay5jcm9zc3dpc2UtYmxvY2stY2Fyb3VzZWwgLmNvbW1vbi1yZWdpb25hbC1ibG9jay1jb250ZW50IHsNCiAgcGFkZGluZzogMCAwLjg3NXJlbTsNCiAgcGFkZGluZy1ib3R0b206IDAuNjI1cmVtOw0KfQ0KLmNvbW1vbi1yZWdpb25hbC1ibG9jay5jcm9zc3dpc2UtYmxvY2stY2Fyb3VzZWwNCiAgLmNvbW1vbi1yZWdpb25hbC1ibG9jay1jb250ZW50DQogIC5jb21tb24tcmVnaW9uYWwtYmxvY2stY29udGVudC1pdGVtIHsNCiAgd2lkdGg6IDEwLjU2MjVyZW07DQp9DQouY29tbW9uLXJlZ2lvbmFsLWJsb2NrLmNyb3Nzd2lzZS1ibG9jay1jYXJvdXNlbA0KICAuY29tbW9uLXJlZ2lvbmFsLWJsb2NrLWNvbnRlbnQNCiAgLmNvbW1vbi1yZWdpb25hbC1ibG9jay1jb250ZW50LWl0ZW0NCiAgLmNvbW1vbi1yZWdpb25hbC1ibG9jay1pdGVtLWltZyB7DQogIHdpZHRoOiAxMDAlOw0KICBoZWlnaHQ6IDYuNXJlbTsNCiAgYm9yZGVyLXJhZGl1czogMC42MjVyZW07DQp9DQouY29tbW9uLXJlZ2lvbmFsLWJsb2NrLmNyb3Nzd2lzZS1ibG9jay1jYXJvdXNlbA0KICAuY29tbW9uLXJlZ2lvbmFsLWJsb2NrLWNvbnRlbnQNCiAgLmNvbW1vbi1yZWdpb25hbC1ibG9jay1jb250ZW50LWl0ZW0NCiAgLmNvbW1vbi1yZWdpb25hbC1ibG9jay1pdGVtLWltZw0KICA+IGltZyB7DQogIHdpZHRoOiAxMDAlOw0KICBoZWlnaHQ6IDEwMCU7DQp9DQouY29tbW9uLXJlZ2lvbmFsLWJsb2NrLmNyb3Nzd2lzZS1ibG9jay1jYXJvdXNlbA0KICAuY29tbW9uLXJlZ2lvbmFsLWJsb2NrLWNvbnRlbnQNCiAgLmNvbW1vbi1yZWdpb25hbC1ibG9jay1jb250ZW50LWl0ZW0NCiAgLmNvbW1vbi1yZWdpb25hbC1ibG9jay1pdGVtLWV4cG91bmQgew0KICBoZWlnaHQ6IDEuOTM3NXJlbTsNCiAgZm9udC1zaXplOiAwLjg3NXJlbTsNCiAgZm9udC13ZWlnaHQ6IDQwMDsNCiAgY29sb3I6ICMyMjIyMzY7DQogIGxpbmUtaGVpZ2h0OiAxLjE4NzVyZW07DQogIHBhZGRpbmc6IDAuNjI1cmVtIDAuNXJlbTsNCn0NCi5jb21tb24tcmVnaW9uYWwtYmxvY2suY3Jvc3N3aXNlLWJsb2NrLWNhcm91c2VsDQogIC5jb21tb24tcmVnaW9uYWwtYmxvY2stY29udGVudA0KICAuY29tbW9uLXJlZ2lvbmFsLWJsb2NrLWNvbnRlbnQtaXRlbQ0KICAuY29tbW9uLXJlZ2lvbmFsLWJsb2NrLWl0ZW0tZXhwb3VuZA0KICA+ICogew0KICBkaXNwbGF5OiAtd2Via2l0LWJveDsNCiAgLXdlYmtpdC1ib3gtb3JpZW50OiB2ZXJ0aWNhbDsNCiAgLXdlYmtpdC1saW5lLWNsYW1wOiAyOw0KICBvdmVyZmxvdzogaGlkZGVuOw0KfQ0KLmNvbW1vbi1yZWdpb25hbC1ibG9jay5jcm9zc3dpc2UtYmxvY2stY2Fyb3VzZWwNCiAgLmNvbW1vbi1yZWdpb25hbC1ibG9jay1jb250ZW50LnR5cGUtb3JpZ2luYWwgew0KICBvdmVyZmxvdzogaGlkZGVuOw0KfQ0KLmNvbW1vbi1yZWdpb25hbC1ibG9jay5jcm9zc3dpc2UtYmxvY2stY2Fyb3VzZWwNCiAgLmNvbW1vbi1yZWdpb25hbC1ibG9jay1jb250ZW50LnR5cGUtb3JpZ2luYWwNCiAgLmNvbW1vbi1yZWdpb25hbC1ibG9jay1jb250ZW50LWFsaWdubWVudCB7DQogIGRpc3BsYXk6IGZsZXg7DQogIG92ZXJmbG93LXg6IGF1dG87DQp9DQouY29tbW9uLXJlZ2lvbmFsLWJsb2NrLmNyb3Nzd2lzZS1ibG9jay1jYXJvdXNlbA0KICAuY29tbW9uLXJlZ2lvbmFsLWJsb2NrLWNvbnRlbnQudHlwZS1vcmlnaW5hbA0KICAuY29tbW9uLXJlZ2lvbmFsLWJsb2NrLWNvbnRlbnQtYWxpZ25tZW50DQogID4gYSB7DQogIGZsZXgtc2hyaW5rOiAwOw0KICBtYXJnaW4tcmlnaHQ6IDAuNjI1cmVtOw0KfQ0KLmFway1saXN0LXdpdGgtZG93bmxvYWQgew0KICBwYWRkaW5nLWJvdHRvbTogMTlweDsNCiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjsNCn0NCmltZyB7DQogIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7DQogIGJvcmRlcjogMDsNCn0NCmEubG9nbyA+IGltZyB7DQogIGFzcGVjdC1yYXRpbzogMjUvNjsNCn0NCi5ub3dyYXAgew0KICBvdmVyZmxvdzogaGlkZGVuOw0KICB3aGl0ZS1zcGFjZTogbm93cmFwOw0KfQ0KLm5hdiB7DQogIGJhY2tncm91bmQ6ICMyNjI3MmI7DQogIHBvc2l0aW9uOiBmaXhlZDsNCiAgdG9wOiAwOw0KICB3aWR0aDogMTAwJTsNCiAgaGVpZ2h0OiA1MHB4Ow0KICBsaW5lLWhlaWdodDogNDVweDsNCiAgei1pbmRleDogOTk5Ow0KfQ0KLm5hdiAubiB7DQogIHBvc2l0aW9uOiByZWxhdGl2ZTsNCiAgd2lkdGg6IDEwMCU7DQogIGRpc3BsYXk6IC13ZWJraXQtYm94Ow0KICBkaXNwbGF5OiAtbW96LWJveDsNCiAgZGlzcGxheTogYm94Ow0KICAtd2Via2l0LWJveC1vcmllbnQ6IGhvcml6b250YWw7DQogIC1tb3otYm94LW9yaWVudDogaG9yaXpvbnRhbDsNCiAgYm94LW9yaWVudDogaG9yaXpvbnRhbDsNCn0NCi5uYXYgLmMgew0KICAtd2Via2l0LWJveC1mbGV4OiAxOw0KICAtbW96LWJveC1mbGV4OiAxOw0KICBib3gtZmxleDogMTsNCiAgbWFyZ2luOiAwIDQ1cHggMCAwOw0KICB0ZXh0LWFsaWduOiBjZW50ZXI7DQp9DQoubmF2IC5jIHVsIHsNCiAgd2lkdGg6IDEwMCU7DQogIGRpc3BsYXk6IC13ZWJraXQtYm94Ow0KICBkaXNwbGF5OiAtbW96LWJveDsNCiAgZGlzcGxheTogYm94Ow0KICAtd2Via2l0LWJveC1vcmllbnQ6IGhvcml6b250YWw7DQogIC1tb3otYm94LW9yaWVudDogaG9yaXpvbnRhbDsNCiAgYm94LW9yaWVudDogaG9yaXpvbnRhbDsNCn0NCi5uYXYgLmMgbGkgew0KICAtd2Via2l0LWJveC1mbGV4OiAxOw0KICAtbW96LWJveC1mbGV4OiAxOw0KICBib3gtZmxleDogMTsNCn0NCi5uYXYgLnIgew0KICBwb3NpdGlvbjogYWJzb2x1dGU7DQogIHJpZ2h0OiAwOw0KICB0b3A6IDA7DQogIHotaW5kZXg6IDk5OTk5Ow0KfQ0KLm5hdiAuciBhIHsNCiAgZGlzcGxheTogYmxvY2s7DQogIHdpZHRoOiA0NXB4Ow0KICBoZWlnaHQ6IDQ1cHg7DQogIHRleHQtYWxpZ246IGNlbnRlcjsNCn0NCi5tZW51IHsNCiAgLXdlYmtpdC10cmFuc2l0aW9uOiBhbGwgMC41cyBjdWJpYy1iZXppZXIoMC4xNjUsIDAuODQsIDAuNDQsIDEpOw0KICAtbW96LXRyYW5zaXRpb246IGFsbCAwLjVzIGN1YmljLWJlemllcigwLjE2NSwgMC44NCwgMC40NCwgMSk7DQogIC1vLXRyYW5zaXRpb246IGFsbCAwLjVzIGN1YmljLWJlemllcigwLjE2NSwgMC44NCwgMC40NCwgMSk7DQogIHRyYW5zaXRpb246IGFsbCAwLjVzIGN1YmljLWJlemllcigwLjE2NSwgMC44NCwgMC40NCwgMSk7DQogIC13ZWJraXQtdHJhbnNpdGlvbi10aW1pbmctZnVuY3Rpb246IGN1YmljLWJlemllcigwLjE2NSwgMC44NCwgMC40NCwgMSk7DQogIC1tb3otdHJhbnNpdGlvbi10aW1pbmctZnVuY3Rpb246IGN1YmljLWJlemllcigwLjE2NSwgMC44NCwgMC40NCwgMSk7DQogIC1vLXRyYW5zaXRpb24tdGltaW5nLWZ1bmN0aW9uOiBjdWJpYy1iZXppZXIoMC4xNjUsIDAuODQsIDAuNDQsIDEpOw0KICB0cmFuc2l0aW9uLXRpbWluZy1mdW5jdGlvbjogY3ViaWMtYmV6aWVyKDAuMTY1LCAwLjg0LCAwLjQ0LCAxKTsNCn0NCi5tZW51IHsNCiAgdHJhbnNpdGlvbi1kdXJhdGlvbjogMC4zczsNCiAgcG9zaXRpb246IGZpeGVkOw0KICB0b3A6IDA7DQogIGxlZnQ6IC0yNzBweDsNCiAgaGVpZ2h0OiAxMDAlOw0KICBvdmVyZmxvdy14OiBoaWRkZW47DQogIG92ZXJmbG93LXk6IGF1dG87DQogIHotaW5kZXg6IDEwMDAxOw0KICBwYWRkaW5nLWJvdHRvbTogNjBweDsNCiAgbWluLXdpZHRoOiAxMDBweDsNCiAgd2lkdGg6IDEwMCU7DQogIG1heC13aWR0aDogMjUxcHg7DQogIGJhY2tncm91bmQgOiMzODM0MzQ7DQp9DQoubWVudS1idG4gew0KICBwYWRkaW5nOiAxM3B4IDA7DQogIHdpZHRoOiA0NXB4Ow0KfQ0KLm1lbnUtYnRuIC5iYXJfMSwNCi5tZW51LWJ0biAuYmFyXzIsDQoubWVudS1idG4gLmJhcl8zIHsNCiAgcG9zaXRpb246IHJlbGF0aXZlOw0KICBkaXNwbGF5OiBibG9jazsNCiAgd2lkdGg6IDIxcHg7DQogIGhlaWdodDogNHB4Ow0KICBtYXJnaW46IDVweCBhdXRvOw0KICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmOw0KICBib3JkZXItcmFkaXVzOiAxMHB4Ow0KfQ0KLm1lbnUtYnRuIC5iYXJfMSB7DQogIG1hcmdpbi10b3A6IDA7DQp9DQoubWVudS1idG4gLmJhcl8zIHsNCiAgbWFyZ2luLWJvdHRvbTogMDsNCn0NCi5tZW51LWJ0bi1jbG9zZSAuYmFyXzEgew0KICAtd2Via2l0LXRyYW5zZm9ybTogdHJhbnNsYXRlWSg4cHgpIHJvdGF0ZSgtNDVkZWcpOw0KICAtbXMtdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDhweCkgcm90YXRlKC00NWRlZyk7DQogIHRyYW5zZm9ybTogdHJhbnNsYXRlWSg4cHgpIHJvdGF0ZSgtNDVkZWcpOw0KICBiYWNrZ3JvdW5kLWNvbG9yOiByZWQ7DQp9DQoubWVudS1idG4tY2xvc2UgLmJhcl8yIHsNCiAgb3BhY2l0eTogMDsNCn0NCi5tZW51LWJ0bi1jbG9zZSAuYmFyXzMgew0KICAtd2Via2l0LXRyYW5zZm9ybTogdHJhbnNsYXRlWSgtOHB4KSByb3RhdGUoNDVkZWcpOw0KICAtbXMtdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC04cHgpIHJvdGF0ZSg0NWRlZyk7DQogIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgtOHB4KSByb3RhdGUoNDVkZWcpOw0KICBiYWNrZ3JvdW5kLWNvbG9yOiByZWQ7DQp9DQoubWVudS1ncm91cCB7DQogIHBhZGRpbmctdG9wOiAxMHB4Ow0KfQ0KLm1lbnUtZ3JvdXAgbGkgYSB7DQogIGRpc3BsYXk6IGJsb2NrOw0KfQ0KDQoubWVudS1ib3JkZXIgew0KICBib3JkZXItYm90dG9tOiBzb2xpZCAwIHJlZDsNCiAgcGFkZGluZy1ib3R0b206IDdweDsNCn0NCi5tZW51LWxheWVyIHsNCiAgcGFkZGluZzogNnB4IDAgNnB4IDE1cHg7DQogIHBvc2l0aW9uOiByZWxhdGl2ZTsNCiAgdG9wOiAtM3B4Ow0KfQ0KLm1lbnUtdGV4dCB7DQogIG1hcmdpbi1sZWZ0OiA4cHg7DQp9DQoubWVudS11c2VyLWxheWVyIHsNCiAgcGFkZGluZzogNnB4IDM1cHggNnB4IDE1cHg7DQogIHBvc2l0aW9uOiByZWxhdGl2ZTsNCn0NCi5tZW51LWxheWVyLA0KLm1lbnUtdXNlci1sYXllciB7DQogIGNvbG9yOiAjZmZmOw0KICBvdmVyZmxvdzogaGlkZGVuOw0KICB3aGl0ZS1zcGFjZTogbm93cmFwOw0KICB0ZXh0LW92ZXJmbG93OiBlbGxpcHNpczsNCn0NCi5tZW51LWxhc3Qgew0KICBtYXJnaW4tYm90dG9tOiA4MHB4Ow0KfQ0KLnNoYWRvdyB7DQogIGRpc3BsYXk6IG5vbmU7DQogIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTsNCiAgcG9zaXRpb246IGZpeGVkOw0KICB0b3A6IDA7DQogIGhlaWdodDogMTAwJTsNCiAgbGVmdDogMDsNCiAgcmlnaHQ6IDA7DQogIHotaW5kZXg6IDEwMDAwOw0KICBwYWRkaW5nLWJvdHRvbTogNjBweDsNCn0NCi5jb250YWluZXIgew0KICBoZWlnaHQ6IDEwdmg7DQogIGp1c3RpZnktY29udGVudDogY2VudGVyOw0KICBhbGlnbi1pdGVtczogY2VudGVyOw0KICBkaXNwbGF5OiBmbGV4Ow0KfQ0KLmljb25zIHsNCiAgcGFkZGluZzogMzVweDsNCiAgd2lkdGg6IDQ1MHB4Ow0KICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47DQogIGFsaWduLWl0ZW1zOiBjZW50ZXI7DQogIGxpc3Qtc3R5bGU6IG5vbmU7DQogIGRpc3BsYXk6IGZsZXg7DQp9DQouZmFjZWJvb2sgew0KICBjdXJzb3I6IHBvaW50ZXI7DQogIGNvbG9yOiAjZTdkZWRlOw0KICB3aWR0aDogMzBweDsNCiAgaGVpZ2h0OiAzMHB4Ow0KICBkaXNwbGF5OiBmbGV4Ow0KICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsNCiAgYWxpZ24taXRlbXM6IGNlbnRlcjsNCiAgYm9yZGVyOiAycHggc29saWQgI2ZmZjsNCiAgYm9yZGVyLXJhZGl1czogNTAlOw0KICBmb250LXNpemU6IDIwcHg7DQogIHRyYW5zaXRpb246IGFsbCAwLjNzOw0KfQ0KLmluc3RhZ3JhbSB7DQogIGN1cnNvcjogcG9pbnRlcjsNCiAgY29sb3I6ICNmOGYxZjE7DQogIHdpZHRoOiAzMHB4Ow0KICBoZWlnaHQ6IDMwcHg7DQogIGRpc3BsYXk6IGZsZXg7DQogIGp1c3RpZnktY29udGVudDogY2VudGVyOw0KICBhbGlnbi1pdGVtczogY2VudGVyOw0KICBib3JkZXI6IDJweCBzb2xpZCAjZmZmOw0KICBib3JkZXItcmFkaXVzOiA1MCU7DQogIGZvbnQtc2l6ZTogMjBweDsNCiAgdHJhbnNpdGlvbjogYWxsIDAuM3M7DQp9DQoudHdpdHRlciB7DQogIGN1cnNvcjogcG9pbnRlcjsNCiAgY29sb3I6ICNmN2YxZjE7DQogIHdpZHRoOiAzMHB4Ow0KICBoZWlnaHQ6IDMwcHg7DQogIGRpc3BsYXk6IGZsZXg7DQogIGp1c3RpZnktY29udGVudDogY2VudGVyOw0KICBhbGlnbi1pdGVtczogY2VudGVyOw0KICBib3JkZXI6IDJweCBzb2xpZCAjZmZmOw0KICBib3JkZXItcmFkaXVzOiA1MCU7DQogIGZvbnQtc2l6ZTogMjBweDsNCiAgdHJhbnNpdGlvbjogYWxsIDAuM3M7DQp9DQoud2hhdHNhcHAgew0KICBjdXJzb3I6IHBvaW50ZXI7DQogIGNvbG9yOiAjZTZlNGU0Ow0KICB3aWR0aDogMzBweDsNCiAgaGVpZ2h0OiAzMHB4Ow0KICBkaXNwbGF5OiBmbGV4Ow0KICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsNCiAgYWxpZ24taXRlbXM6IGNlbnRlcjsNCiAgYm9yZGVyOiAycHggc29saWQgI2ZmZjsNCiAgYm9yZGVyLXJhZGl1czogNTAlOw0KICBmb250LXNpemU6IDIwcHg7DQogIHRyYW5zaXRpb246IGFsbCAwLjNzOw0KfQ0KLmZhY2Vib29rOmhvdmVyIHsNCiAgYm9yZGVyLWNvbG9yOiAjMGY2ZWE1Ow0KICBib3gtc2hhZG93OiAwIDAgMjBweCAjMjg4ZWJkOw0KICBjb2xvcjogIzRhOTllNDsNCn0NCi5pbnN0YWdyYW06aG92ZXIgew0KICBib3JkZXItY29sb3I6ICMwNzA3MDc7DQogIGJveC1zaGFkb3c6IDAgMCAyMHB4ICM2ZTZlNmU7DQogIGNvbG9yOiAjZjNlOWY1Ow0KfQ0KLnR3aXR0ZXI6aG92ZXIgew0KICBib3JkZXItY29sb3I6ICNmZjAwMWU7DQogIGJveC1zaGFkb3c6IDAgMCAyMHB4ICNmZjAwMWU7DQogIGNvbG9yOiAjZmYwMDFlOw0KfQ0KLndoYXRzYXBwOmhvdmVyIHsNCiAgYm9yZGVyLWNvbG9yOiAjMmYwOw0KICBib3gtc2hhZG93OiAwIDAgMjBweCAjMmYwOw0KICBjb2xvcjogIzJmMDsNCn0NCi5mb290ZXItZGlzdHJpYnV0ZWQgew0KICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjYyNzJiOw0KICBib3gtc2hhZG93OiAwIDFweCAxcHggMCByZ2JhKDAsIDAsIDAsIDAuMTIpOw0KICBib3gtc2l6aW5nOiBib3JkZXItYm94Ow0KICB3aWR0aDogMTAwJTsNCiAgdGV4dC1hbGlnbjogbGVmdDsNCiAgZm9udDogbm9ybWFsIDE2cHggc2Fucy1zZXJpZjsNCiAgcGFkZGluZzogNDVweCA1MHB4Ow0KfQ0KLmZvb3Rlci1kaXN0cmlidXRlZCAuZm9vdGVyLWxlZnQgcCB7DQogIGNvbG9yOiAjOGY5Mjk2Ow0KICBmb250LXNpemU6IDEycHg7DQogIG1hcmdpbjogMDsNCn0NCi5mb290ZXItZGlzdHJpYnV0ZWQgcC5mb290ZXItbGlua3Mgew0KICBmb250LXNpemU6IDEwcHg7DQogIGZvbnQtd2VpZ2h0OiA3MDA7DQogIGNvbG9yOiAjZmZmOw0KICBtYXJnaW46IDAgMCAxMHB4Ow0KICBwYWRkaW5nOiAwOw0KICB0cmFuc2l0aW9uOiBlYXNlIDAuMjVzOw0KfQ0KLmZvb3Rlci1kaXN0cmlidXRlZCBwLmZvb3Rlci1saW5rcyBhIHsNCiAgZGlzcGxheTogaW5saW5lLWJsb2NrOw0KICBsaW5lLWhlaWdodDogMS44Ow0KICB0ZXh0LWRlY29yYXRpb246IG5vbmU7DQogIGNvbG9yOiBpbmhlcml0Ow0KICB0cmFuc2l0aW9uOiBlYXNlIDAuMjVzOw0KfQ0KLmZvb3Rlci1kaXN0cmlidXRlZCAuZm9vdGVyLWxpbmtzIGE6YmVmb3JlIHsNCiAgZm9udC1zaXplOiA4cHg7DQogIGxlZnQ6IDA7DQogIGNvbG9yOiAjZmZmOw0KICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7DQogIHBhZGRpbmctcmlnaHQ6IDFweDsNCn0NCi5mb290ZXItZGlzdHJpYnV0ZWQgLmZvb3Rlci1yaWdodCB7DQogIGZsb2F0OiByaWdodDsNCiAgbWFyZ2luLXRvcDogM3B4Ow0KICBtYXgtd2lkdGg6IDE4MHB4Ow0KfQ0KLmZvb3Rlci1kaXN0cmlidXRlZCAuZm9vdGVyLXJpZ2h0IGEgew0KICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7DQogIHdpZHRoOiAzNXB4Ow0KICBoZWlnaHQ6IDA7DQogIGJhY2tncm91bmQtY29sb3I6ICMxMzI3NGY7DQogIGJvcmRlci1yYWRpdXM6IDYycHg7DQogIGZvbnQtc2l6ZTogMjBweDsNCiAgY29sb3I6ICNmZmY7DQogIHRleHQtYWxpZ246IGNlbnRlcjsNCiAgbGluZS1oZWlnaHQ6IDM1cHg7DQogIG1hcmdpbi1sZWZ0OiAzcHg7DQogIHRyYW5zaXRpb246IGFsbCAwLjI1czsNCn0NCi5mb290ZXItZGlzdHJpYnV0ZWQgLmZvb3Rlci1yaWdodCBhOmhvdmVyIHsNCiAgdHJhbnNmb3JtOiBzY2FsZSgxLjEpOw0KICAtd2Via2l0LXRyYW5zZm9ybTogc2NhbGUoMS4xKTsNCn0NCi5mb290ZXItZGlzdHJpYnV0ZWQgcC5mb290ZXItbGlua3MgYTpob3ZlciB7DQogIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lOw0KfQ0KQG1lZGlhIChtYXgtd2lkdGg6IDYwMHB4KSB7DQogIC5mb290ZXItZGlzdHJpYnV0ZWQgLmZvb3Rlci1sZWZ0LA0KICAuZm9vdGVyLWRpc3RyaWJ1dGVkIC5mb290ZXItcmlnaHQgew0KICAgIHRleHQtYWxpZ246IGNlbnRlcjsNCiAgfQ0KICAuZm9vdGVyLWRpc3RyaWJ1dGVkIC5mb290ZXItcmlnaHQgew0KICAgIGZsb2F0OiBub25lOw0KICAgIG1hcmdpbjogMCBhdXRvIDEwcHg7DQogIH0NCiAgLmZvb3Rlci1kaXN0cmlidXRlZCAuZm9vdGVyLWxlZnQgcC5mb290ZXItbGlua3Mgew0KICAgIGxpbmUtaGVpZ2h0OiAxLjg7DQogIH0NCn0NCi5jb21tb24tdGl0bGUgew0KICBwYWRkaW5nOiAwIDAuODc1cmVtOw0KICBiYWNrZ3JvdW5kOiAjZmZmOw0KfQ0KLmNvbW1vbi10aXRsZSAuY29tbW9uLXRpdGxlLWNvbnRlbnQgew0KICBwYWRkaW5nOiAwLjkzNzVyZW0gMDsNCiAgZGlzcGxheTogZmxleDsNCiAgYWxpZ24taXRlbXM6IGNlbnRlcjsNCiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuOw0KfQ0KLmNvbW1vbi10aXRsZSAuY29tbW9uLXRpdGxlLWNvbnRlbnQgLmNvbW1vbi10aXRsZS1jb250ZW50LW5hbWUgew0KICBmb250LXNpemU6IDE2cHg7DQogIGZvbnQtd2VpZ2h0OiA5MDA7DQogIG1hcmdpbi1sZWZ0OiA3cHg7DQogIA0KICBkaXNwbGF5OiBmbGV4Ow0KfQ0KLmNvbW1vbi10aXRsZSAuY29tbW9uLXRpdGxlLWNvbnRlbnQgLmNvbW1vbi10aXRsZS1jb250ZW50LW5hbWUgPiBkaXYgew0KICBtYXgtd2lkdGg6IDIwcmVtOw0KfQ0KYS5iZWF1dGlmeSB7DQogIHRleHQtZGVjb3JhdGlvbjogbm9uZTsNCiAgY29sb3I6IGluaGVyaXQ7DQogIGZvbnQtd2VpZ2h0OiBpbmhlcml0Ow0KICBmb250LXNpemU6IGluaGVyaXQ7DQogIGZvbnQtc3R5bGU6IGluaGVyaXQ7DQp9DQphLmJlYXV0aWZ5Omxpbmsgew0KICB0ZXh0LWRlY29yYXRpb246IGluaGVyaXQ7DQogIGNvbG9yOiBpbmhlcml0Ow0KICBmb250LXdlaWdodDogaW5oZXJpdDsNCiAgZm9udC1zaXplOiBpbmhlcml0Ow0KICBmb250LXN0eWxlOiBpbmhlcml0Ow0KfQ0KYS5iZWF1dGlmeTp2aXNpdGVkIHsNCiAgdGV4dC1kZWNvcmF0aW9uOiBpbmhlcml0Ow0KICBjb2xvcjogaW5oZXJpdDsNCiAgZm9udC13ZWlnaHQ6IGluaGVyaXQ7DQogIGZvbnQtc2l6ZTogaW5oZXJpdDsNCiAgZm9udC1zdHlsZTogaW5oZXJpdDsNCn0NCi5hZWdvbiB7DQogIGJhY2tncm91bmQtY29sb3I6IHdoaXRlOw0KfQ0KLmFlZ29uIGEgew0KICBkaXNwbGF5OiBmbGV4Ow0KICBhbGlnbi1pdGVtczogY2VudGVyOw0KICBwYWRkaW5nOiAxMHB4IDE2cHg7DQp9DQouYWVnb24gLnRleHQgew0KICB3aWR0aDogMDsNCiAgZmxleC1ncm93OiAxOw0KICBtYXJnaW46IDAgOHB4Ow0KfQ0KLmFlZ29uIC50ZXh0IC5uYW1lIHsNCiAgZm9udC13ZWlnaHQ6IDUwMDsNCiAgY29sb3I6ICM0YjRiNGI7DQogIGxpbmUtaGVpZ2h0OiAyMHB4Ow0KfQ0KLmFlZ29uIC50ZXh0IC5kZXNjIHsNCiAgbWFyZ2luLXRvcDogNHB4Ow0KICBmb250LXNpemU6IDEycHg7DQogIGxpbmUtaGVpZ2h0OiAxNnB4Ow0KICBjb2xvcjogIzVlNWU1ZTsNCiAgd2hpdGUtc3BhY2U6IG5vd3JhcDsNCiAgb3ZlcmZsb3c6IGhpZGRlbjsNCiAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7DQp9DQouYWVnb24gLmJ1dHRvbiB7DQogIHBhZGRpbmc6IDhweCAxMnB4Ow0KICBiYWNrZ3JvdW5kOiAjMjRjZDc3Ow0KICBib3JkZXItcmFkaXVzOiA0cHg7DQogIGZvbnQtc2l6ZTogMTJweDsNCiAgbGluZS1oZWlnaHQ6IDEycHg7DQogIGNvbG9yOiB3aGl0ZTsNCn0NCi5hZWdvbiAuc2NvcmUgew0KICBkaXNwbGF5OiBub25lOw0KfQ0KQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogOTk2cHgpIHsNCiAgLmFlZ29uIHsNCiAgICBwYWRkaW5nOiAxMnB4Ow0KICB9DQogIC5hZWdvbiAuc2NvcmUgew0KICAgIGRpc3BsYXk6IGluaXRpYWw7DQogIH0NCiAgLmFlZ29uIGEgew0KICAgIGZsZXgtd3JhcDogd3JhcDsNCiAgICBwYWRkaW5nOiAwOw0KICB9DQogIC5hZWdvbiAuaWNvbiB7DQogICAgd2lkdGg6IDU2cHg7DQogICAgaGVpZ2h0OiA1NnB4Ow0KICB9DQogIC5hZWdvbiAudGV4dCB7DQogICAgbWFyZ2luLWxlZnQ6IDEwcHg7DQogICAgbWFyZ2luLXJpZ2h0OiAwOw0KICAgIHBhZGRpbmc6IDRweCAwOw0KICAgIHdpZHRoOiBjYWxjKDEwMCUgLSA2NnB4KTsNCiAgfQ0KICAuYWVnb24gLm5hbWUgew0KICAgIGZvbnQtc2l6ZTogMTZweDsNCiAgICBsaW5lLWhlaWdodDogMjRweDsNCiAgfQ0KICAuYWVnb24gLnNjb3JlIHsNCiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7DQogICAgbWFyZ2luOiAwIDRweDsNCiAgICBjb2xvcjogI2ZhOGIxNjsNCiAgICBmb250LXNpemU6IDEycHg7DQogICAgbGluZS1oZWlnaHQ6IDEwcHg7DQogICAgaGVpZ2h0OiAxMHB4Ow0KICB9DQogIC5hZWdvbiAuc2NvcmU6OmJlZm9yZSB7DQogICAgY29udGVudDogIiI7DQogICAgZGlzcGxheTogaW5saW5lLWJsb2NrOw0KICAgIHdpZHRoOiAxMHB4Ow0KICAgIGhlaWdodDogMTBweDsNCiAgICBiYWNrZ3JvdW5kOiB1cmwoImh0dHBzOi8vc3RhdGljLm1wM3BsYXkuY29tL3d3dy9zdGF0aWMvaW1ncy9pY29uLW1wMy1saXN0LXN0YXIuc3ZnIik7DQogICAgbWFyZ2luOiAwIDRweDsNCiAgfQ0KICAuYWVnb24gLmRlc2Mgew0KICAgIG1hcmdpbi10b3A6IDRweDsNCiAgICBmb250LXNpemU6IDE0cHg7DQogICAgbGluZS1oZWlnaHQ6IDIwcHg7DQogIH0NCiAgLmFlZ29uIC5idXR0b24gew0KICAgIG1hcmdpbi10b3A6IDlweDsNCiAgICBmb250LXdlaWdodDogNTAwOw0KICAgIGZvbnQtc2l6ZTogMTRweDsNCiAgICBsaW5lLWhlaWdodDogMThweDsNCiAgICB3aWR0aDogMTAwJTsNCiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7DQogIH0NCn0NCi5tcDMtbGlzdC0xMDAxIHsNCiAgd2hpdGUtc3BhY2U6IG5vd3JhcDsNCiAgb3ZlcmZsb3cteDogYXV0bzsNCiAgcGFkZGluZy1ib3R0b206IDE2cHg7DQp9DQoubXAzLWxpc3QtMTAwMSBhIHsNCiAgdmVydGljYWwtYWxpZ246IG1pZGRsZTsNCiAgZGlzcGxheTogaW5saW5lLWJsb2NrOw0KICBtYXJnaW4tbGVmdDogMTJweDsNCiAgbWFyZ2luLWxlZnQ6IHZhcigtLWFwcC1ob3Jpem9udGFsLXNwYWNpbmcpOw0KICBtaW4td2lkdGg6IDc2cHg7DQogIHdpZHRoOiAxMi41JTsNCiAgd2lkdGg6IGNhbGMoKDEwMCUgLSAzMnB4IC0gNyAqIHZhcigtLWFwcC1ob3Jpem9udGFsLXNwYWNpbmcpKSAvIDgpOw0KfQ0KLm1wMy1saXN0LTEwMDEgYTpmaXJzdC1jaGlsZCB7DQogIG1hcmdpbi1sZWZ0OiAxNnB4Ow0KfQ0KLm1wMy1saXN0LTEwMDEgYTpsYXN0LWNoaWxkIHsNCiAgbWFyZ2luLXJpZ2h0OiAxNnB4Ow0KfQ0KLm1wMy1saXN0LTEwMDEgLmltZy1yYXRpbyB7DQogIHBvc2l0aW9uOiByZWxhdGl2ZTsNCiAgcGFkZGluZy10b3A6IDEwMCU7DQp9DQoubXAzLWxpc3QtMTAwMSAuaW1nLXJhdGlvID4gLmljb24gew0KICB3aWR0aDogMTAwJTsNCiAgaGVpZ2h0OiAxMDAlOw0KICBwb3NpdGlvbjogYWJzb2x1dGU7DQogIHRvcDogMDsNCiAgcmlnaHQ6IDA7DQogIGJvdHRvbTogMDsNCiAgbGVmdDogMDsNCn0NCi5tcDMtbGlzdC0xMDAxIC5pY29uIHsNCiAgYm9yZGVyOiAxcHggc29saWQgI2VmZjNmOTsNCiAgYm9yZGVyLXJhZGl1czogMTUlOw0KfQ0KLm1wMy1saXN0LTEwMDEgLm5hbWUgew0KICBtYXJnaW4tdG9wOiA0cHg7DQogIGxpbmUtaGVpZ2h0OiAyMHB4Ow0KICBjb2xvcjogIzVlNWU1ZTsNCiAgaGVpZ2h0OiA0MHB4Ow0KICB3aGl0ZS1zcGFjZTogaW5pdGlhbDsNCn0NCkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDQyOXB4KSB7DQogIC5tcDMtbGlzdC0xMDAxLmVuYWJsZS13cmFwIHsNCiAgICBkaXNwbGF5OiBmbGV4Ow0KICAgIGZsZXgtd3JhcDogd3JhcDsNCiAgICBwYWRkaW5nOiAwIDE2cHg7DQogICAgcGFkZGluZy1ib3R0b206IDE2cHg7DQogICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuOw0KICB9DQogIC5tcDMtbGlzdC0xMDAxLmVuYWJsZS13cmFwIGEgew0KICAgIHdpZHRoOiAyMCU7DQogICAgd2lkdGg6IGNhbGMoKDEwMCUgLSA0OHB4KSAvIDQpOw0KICAgIG1pbi13aWR0aDogYXV0bzsNCiAgICBtYXJnaW4tbGVmdDogMDsNCiAgfQ0KICAubXAzLWxpc3QtMTAwMS5lbmFibGUtd3JhcCBhOm50aC1jaGlsZChuICsgNSkgew0KICAgIG1hcmdpbi10b3A6IDEycHg7DQogIH0NCiAgLm1wMy1saXN0LTEwMDEuZW5hYmxlLXdyYXAgYTpsYXN0LWNoaWxkIHsNCiAgICBtYXJnaW4tcmlnaHQ6IDA7DQogIH0NCn0NCkBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDk5NnB4KSB7DQogIC5tcDMtbGlzdC0xMDAxIGEgew0KICAgIHdpZHRoOiBjYWxjKCgxMDAlIC0gMTQ0cHgpIC8gOCk7DQogICAgbWFyZ2luLWxlZnQ6IDE2cHg7DQogICAgdmVydGljYWwtYWxpZ246IGJvdHRvbTsNCiAgICBtaW4td2lkdGg6IGF1dG87DQogIH0NCn0NCkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDcxOXB4KSB7DQogIC5hcnRpY2xlLWxpc3QgLmFydGljbGU6Zmlyc3Qgew0KICAgIHBhZGRpbmctdG9wOiAwOw0KICB9DQp9DQoubXAzOmhvdmVyIC5uYW1lIHsNCiAgY29sb3I6ICMwMGE2ZWQ7DQp9DQpib2R5IHsNCiAgbWFyZ2luOiAwOw0KICBwYWRkaW5nOiAwOw0KfQ0KYm9keSB7DQogIGZvbnQtZmFtaWx5OiAiSGVsdmV0aWNhIE5ldWUiLCBIZWx2ZXRpY2EsIEFyaWFsLCBzYW5zLXNlcmlmOw0KICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDsNCiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTsNCiAgZm9udC1zaXplOiAxNHB4Ow0KICBjb2xvcjogIzVlNWU1ZTsNCiAgbGluZS1oZWlnaHQ6IDE4cHg7DQogIHotaW5kZXg6IC0xMDAwMDsNCiAgYmFja2dyb3VuZDogI2YyZjVmOTsNCn0NCmh0bWwgew0KICBmb250LXNpemU6IDYyLjUlOw0KfQ0KYSB7DQogIGNvbG9yOiAjMDBhNmVkOw0KICB0ZXh0LWRlY29yYXRpb246IG5vbmU7DQp9DQphOmhvdmVyIHsNCiAgY29sb3I6ICMwMGI2ZmY7DQp9DQppbWcgew0KICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlOw0KICBib3JkZXI6IDA7DQogIGNvbG9yOiAjY2NjOw0KfQ0KYm9keSB7DQogIHBhZGRpbmctdG9wOiA0NXB4Ow0KfQ0KQG1lZGlhIChtaW4td2lkdGg6IDk5NnB4KSB7DQogIGJvZHkgew0KICAgIHBhZGRpbmctdG9wOiA3MHB4Ow0KICB9DQp9DQo6cm9vdCB7DQogIC0tbW9kdWxlLXNwYWNpbmc6IDRweDsNCiAgLS1hcHAtaG9yaXpvbnRhbC1zcGFjaW5nOiA4cHg7DQogIC0tYXBwLXZlcnRpY2FsLXNwYWNpbmc6IDEycHg7DQogIC0taHRtbC1kaXJlY3Rpb246IDE7DQogIC0taHRtbC1ydGw6IDA7DQp9DQpAbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOiA3MjBweCkgYW5kIChtYXgtd2lkdGg6IDk5NXB4KSB7DQogIDpyb290IHsNCiAgICAtLW1vZHVsZS1zcGFjaW5nOiA0cHg7DQogICAgLS1hcHAtaG9yaXpvbnRhbC1zcGFjaW5nOiAxMnB4Ow0KICB9DQp9DQpAbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOiA5OTZweCkgew0KICA6cm9vdCB7DQogICAgLS1tb2R1bGUtc3BhY2luZzogOHB4Ow0KICAgIC0tYXBwLWhvcml6b250YWwtc3BhY2luZzogMTZweDsNCiAgfQ0KfQ0KLm5vLXNjcm9sbGJhcjo6LXdlYmtpdC1zY3JvbGxiYXIgew0KICBkaXNwbGF5OiBub25lOw0KfQ0KLm9uZS1saW5lIHsNCiAgb3ZlcmZsb3c6IGhpZGRlbjsNCiAgd2hpdGUtc3BhY2U6IG5vd3JhcDsNCiAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7DQp9DQouZG91YmxlLWxpbmVzIHsNCiAgb3ZlcmZsb3c6IGhpZGRlbjsNCiAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7DQogIGRpc3BsYXk6IC13ZWJraXQtYm94Ow0KICAtd2Via2l0LWxpbmUtY2xhbXA6IDI7DQogIC13ZWJraXQtYm94LW9yaWVudDogdmVydGljYWw7DQogIGZvbnQtc2l6ZToxMnB4Ow0KICBtYXJnaW4tbGVmdDogNHB4Ow0KfQ0KYTpob3ZlciB7DQogIA0KICB0cmFuc2Zvcm06IHNjYWxlKDEuMDUpOw0KICANCn0NCg0KDQoNCiogew0KICBib3gtc2l6aW5nOiBib3JkZXItYm94Ow0KICBwYWRkaW5nOiAwOw0KICBtYXJnaW46IDA7DQogIG91dGxpbmU6IDA7DQogIGZvbnQtZmFtaWx5OiAiR2lsbCBTYW5zIiwgIkdpbGwgU2FucyBNVCIsIENhbGlicmk7DQogIGRpcmVjdGlvbjogbHRyOw0KfQ0KDQoNCi5BbS1pbWctc2xpZGVyLWNvbnRhaW5lciB7DQogIHdpZHRoOiAxMDAlOw0KICBoZWlnaHQ6IDI1MHB4Ow0KICBvdmVyZmxvdzogaGlkZGVuOw0KfQ0KDQpAbWVkaWEgKG1pbi13aWR0aDogMTIwMHB4KSB7DQogIC5BbS1pbWctc2xpZGVyLWNvbnRhaW5lciB7DQogICAgd2lkdGg6IDgwJTsNCiAgICBtYXJnaW46IDI1cHggYXV0bzsNCiAgfQ0KfQ0KDQouQW0taW1nLXNsaWRlci1jb250YWluZXIgLmJsb2ctc2xpZGVyIC5zd2lwZXItc2xpZGUgew0KICB3aWR0aDogMTAwJTsNCiAgaGVpZ2h0OiAxMDAlOw0KICBwYWRkaW5nOiAyMHB4Ow0KICBkaXNwbGF5OiBmbGV4Ow0KICBmbGV4LWRpcmVjdGlvbjogcm93Ow0KICBhbGlnbi1pdGVtczogc3RyZXRjaDsNCn0NCg0KLkFtLWltZy1zbGlkZXItY29udGFpbmVyIC5ibG9nLXNsaWRlciAuc3dpcGVyLXNsaWRlLnN3aXBlci1zbGlkZS1hY3RpdmUgLmJsb2ctc2xpZGVyX19jb250ZW50IHsNCiAgcG9zaXRpb246IHJlbGF0aXZlOw0KICBtYXJnaW4tbGVmdDogMTVweDsNCn0NCg0KLkFtLWltZy1zbGlkZXItY29udGFpbmVyIC5ibG9nLXNsaWRlciAuc3dpcGVyLXNsaWRlLnN3aXBlci1zbGlkZS1hY3RpdmUgLmJsb2ctc2xpZGVyX19jb250ZW50ID4gKiB7DQogIG9wYWNpdHk6IDE7DQogIHRyYW5zZm9ybTogbm9uZTsNCn0NCg0KLkFtLWltZy1zbGlkZXItY29udGFpbmVyIC5ibG9nLXNsaWRlciAuc3dpcGVyLXNsaWRlLnN3aXBlci1zbGlkZS1hY3RpdmUgLmJsb2ctc2xpZGVyX19jb250ZW50ID4gKjpudGgtY2hpbGQoMSkgew0KICB0cmFuc2l0aW9uLWRlbGF5OiAwLjNzOw0KfQ0KDQouQW0taW1nLXNsaWRlci1jb250YWluZXIgLmJsb2ctc2xpZGVyIC5zd2lwZXItc2xpZGUuc3dpcGVyLXNsaWRlLWFjdGl2ZSAuYmxvZy1zbGlkZXJfX2NvbnRlbnQgPiAqOm50aC1jaGlsZCgyKSB7DQogIHRyYW5zaXRpb24tZGVsYXk6IDAuNHM7DQp9DQoNCi5BbS1pbWctc2xpZGVyLWNvbnRhaW5lciAuYmxvZy1zbGlkZXIgLnN3aXBlci1zbGlkZS5zd2lwZXItc2xpZGUtYWN0aXZlIC5ibG9nLXNsaWRlcl9fY29udGVudCA+ICo6bnRoLWNoaWxkKDMpIHsNCiAgdHJhbnNpdGlvbi1kZWxheTogMC41czsNCn0NCg0KLkFtLWltZy1zbGlkZXItY29udGFpbmVyIC5ibG9nLXNsaWRlciAuc3dpcGVyLXNsaWRlLnN3aXBlci1zbGlkZS1hY3RpdmUgLmJsb2ctc2xpZGVyX19jb250ZW50ID4gKjpudGgtY2hpbGQoNCkgew0KICB0cmFuc2l0aW9uLWRlbGF5OiAwLjZzOw0KfQ0KDQouQW0taW1nLXNsaWRlci1jb250YWluZXIgLmJsb2ctc2xpZGVyIC5zd2lwZXItc2xpZGUuc3dpcGVyLXNsaWRlLWFjdGl2ZSAuYmxvZy1zbGlkZXJfX2NvbnRlbnQgPiAqOm50aC1jaGlsZCg1KSB7DQogIHRyYW5zaXRpb24tZGVsYXk6IDAuN3M7DQp9DQoNCi5BbS1pbWctc2xpZGVyLWNvbnRhaW5lciAuYmxvZy1zbGlkZXIgLnN3aXBlci1zbGlkZS5zd2lwZXItc2xpZGUtYWN0aXZlIC5ibG9nLXNsaWRlcl9fY29udGVudCA+ICo6bnRoLWNoaWxkKDYpIHsNCiAgdHJhbnNpdGlvbi1kZWxheTogMC44czsNCn0NCg0KLkFtLWltZy1zbGlkZXItY29udGFpbmVyIC5ibG9nLXNsaWRlciAuc3dpcGVyLXNsaWRlLnN3aXBlci1zbGlkZS1hY3RpdmUgLmJsb2ctc2xpZGVyX19jb250ZW50ID4gKjpudGgtY2hpbGQoNykgew0KICB0cmFuc2l0aW9uLWRlbGF5OiAwLjlzOw0KfQ0KDQouQW0taW1nLXNsaWRlci1jb250YWluZXIgLmJsb2ctc2xpZGVyIC5zd2lwZXItc2xpZGUuc3dpcGVyLXNsaWRlLWFjdGl2ZSAuYmxvZy1zbGlkZXJfX2NvbnRlbnQgPiAqOm50aC1jaGlsZCg4KSB7DQogIHRyYW5zaXRpb24tZGVsYXk6IDFzOw0KfQ0KDQouQW0taW1nLXNsaWRlci1jb250YWluZXIgLmJsb2ctc2xpZGVyIC5zd2lwZXItc2xpZGUuc3dpcGVyLXNsaWRlLWFjdGl2ZSAuYmxvZy1zbGlkZXJfX2NvbnRlbnQgPiAqOm50aC1jaGlsZCg5KSB7DQogIHRyYW5zaXRpb24tZGVsYXk6IDEuMXM7DQp9DQoNCi5BbS1pbWctc2xpZGVyLWNvbnRhaW5lciAuYmxvZy1zbGlkZXIgLnN3aXBlci1zbGlkZS5zd2lwZXItc2xpZGUtYWN0aXZlIC5ibG9nLXNsaWRlcl9fY29udGVudCA+ICo6bnRoLWNoaWxkKDEwKSB7DQogIHRyYW5zaXRpb24tZGVsYXk6IDEuMnM7DQp9DQoNCi5BbS1pbWctc2xpZGVyLWNvbnRhaW5lciAuYmxvZy1zbGlkZXIgLnN3aXBlci1zbGlkZS5zd2lwZXItc2xpZGUtYWN0aXZlIC5ibG9nLXNsaWRlcl9fY29udGVudCA+ICo6bnRoLWNoaWxkKDExKSB7DQogIHRyYW5zaXRpb24tZGVsYXk6IDEuM3M7DQp9DQoNCi5BbS1pbWctc2xpZGVyLWNvbnRhaW5lciAuYmxvZy1zbGlkZXIgLnN3aXBlci1zbGlkZS5zd2lwZXItc2xpZGUtYWN0aXZlIC5ibG9nLXNsaWRlcl9fY29udGVudCA+ICo6bnRoLWNoaWxkKDEyKSB7DQogIHRyYW5zaXRpb24tZGVsYXk6IDEuNHM7DQp9DQoNCi5BbS1pbWctc2xpZGVyLWNvbnRhaW5lciAuYmxvZy1zbGlkZXIgLnN3aXBlci1zbGlkZS5zd2lwZXItc2xpZGUtYWN0aXZlIC5ibG9nLXNsaWRlcl9fY29udGVudCA+ICo6bnRoLWNoaWxkKDEzKSB7DQogIHRyYW5zaXRpb24tZGVsYXk6IDEuNXM7DQp9DQoNCi5BbS1pbWctc2xpZGVyLWNvbnRhaW5lciAuYmxvZy1zbGlkZXIgLnN3aXBlci1zbGlkZS5zd2lwZXItc2xpZGUtYWN0aXZlIC5ibG9nLXNsaWRlcl9fY29udGVudCA+ICo6bnRoLWNoaWxkKDE0KSB7DQogIHRyYW5zaXRpb24tZGVsYXk6IDEuNnM7DQp9DQoNCi5BbS1pbWctc2xpZGVyLWNvbnRhaW5lciAuYmxvZy1zbGlkZXIgLnN3aXBlci1zbGlkZS5zd2lwZXItc2xpZGUtYWN0aXZlIC5ibG9nLXNsaWRlcl9fY29udGVudCA+ICo6bnRoLWNoaWxkKDE1KSB7DQogIHRyYW5zaXRpb24tZGVsYXk6IDEuN3M7DQp9DQoNCi5BbS1pbWctc2xpZGVyLWNvbnRhaW5lciAuYmxvZy1zbGlkZXIgLnN3aXBlci1zbGlkZS5zd2lwZXItc2xpZGUtYWN0aXZlIC5ibG9nLXNsaWRlcl9faW1ncyBpbWcubW92aWUtaW1hZ2U6bnRoLWNoaWxkKDEpIHsNCiAgYW5pbWF0aW9uOiAxLjVzIDEgaW1nQW5pbWU7DQogIC13ZWJraXQtYW5pbWF0aW9uOiAxLjVzIDEgaW1nQW5pbWU7DQogIHRyYW5zaXRpb24tZGVsYXk6IDAuM3M7DQogIG9wYWNpdHk6IDE7DQp9DQoNCi5BbS1pbWctc2xpZGVyLWNvbnRhaW5lciAuYmxvZy1zbGlkZXIgLnN3aXBlci1zbGlkZS5zd2lwZXItc2xpZGUtYWN0aXZlIC5ibG9nLXNsaWRlcl9faW1ncyAub3Zlcmx5IHsNCiAgb3BhY2l0eTogMTsNCiAgYW5pbWF0aW9uOiAycyAxIHBsYXlBbmltZTsNCiAgLXdlYmtpdC1hbmltYXRpb246IDJzIDEgcGxheUFuaW1lOw0KICBkaXNwbGF5OiBibG9jazsNCn0NCg0KLkFtLWltZy1zbGlkZXItY29udGFpbmVyIC5ibG9nLXNsaWRlciAuc3dpcGVyLXNsaWRlLnN3aXBlci1zbGlkZS1hY3RpdmUgLmJsb2ctc2xpZGVyX19pbWdzIGltZy5tb3ZpZS1pbWFnZTpudGgtY2hpbGQoMikgew0KICBhbmltYXRpb246IDEuNXMgMSBpbWdBbmltZTsNCiAgLXdlYmtpdC1hbmltYXRpb246IDEuNXMgMSBpbWdBbmltZTsNCiAgdHJhbnNpdGlvbi1kZWxheTogMC40czsNCiAgb3BhY2l0eTogMTsNCn0NCg0KLkFtLWltZy1zbGlkZXItY29udGFpbmVyIC5ibG9nLXNsaWRlciAuc3dpcGVyLXNsaWRlLnN3aXBlci1zbGlkZS1hY3RpdmUgLmJsb2ctc2xpZGVyX19pbWdzIC5vdmVybHkgew0KICBvcGFjaXR5OiAxOw0KICBhbmltYXRpb246IDJzIDEgcGxheUFuaW1lOw0KICAtd2Via2l0LWFuaW1hdGlvbjogMnMgMSBwbGF5QW5pbWU7DQogIGRpc3BsYXk6IGJsb2NrOw0KfQ0KDQouQW0taW1nLXNsaWRlci1jb250YWluZXIgLmJsb2ctc2xpZGVyIC5zd2lwZXItc2xpZGUuc3dpcGVyLXNsaWRlLWFjdGl2ZSAuYmxvZy1zbGlkZXJfX2ltZ3MgaW1nLm1vdmllLWltYWdlOm50aC1jaGlsZCgzKSB7DQogIGFuaW1hdGlvbjogMS41cyAxIGltZ0FuaW1lOw0KICAtd2Via2l0LWFuaW1hdGlvbjogMS41cyAxIGltZ0FuaW1lOw0KICB0cmFuc2l0aW9uLWRlbGF5OiAwLjVzOw0KICBvcGFjaXR5OiAxOw0KfQ0KDQouQW0taW1nLXNsaWRlci1jb250YWluZXIgLmJsb2ctc2xpZGVyIC5zd2lwZXItc2xpZGUuc3dpcGVyLXNsaWRlLWFjdGl2ZSAuYmxvZy1zbGlkZXJfX2ltZ3MgLm92ZXJseSB7DQogIG9wYWNpdHk6IDE7DQogIGFuaW1hdGlvbjogMnMgMSBwbGF5QW5pbWU7DQogIC13ZWJraXQtYW5pbWF0aW9uOiAycyAxIHBsYXlBbmltZTsNCiAgZGlzcGxheTogYmxvY2s7DQp9DQoNCi5BbS1pbWctc2xpZGVyLWNvbnRhaW5lciAuYmxvZy1zbGlkZXIgLnN3aXBlci1zbGlkZS5zd2lwZXItc2xpZGUtYWN0aXZlIC5ibG9nLXNsaWRlcl9faW1ncyBpbWcubW92aWUtaW1hZ2U6bnRoLWNoaWxkKDQpIHsNCiAgYW5pbWF0aW9uOiAxLjVzIDEgaW1nQW5pbWU7DQogIC13ZWJraXQtYW5pbWF0aW9uOiAxLjVzIDEgaW1nQW5pbWU7DQogIHRyYW5zaXRpb24tZGVsYXk6IDAuNnM7DQogIG9wYWNpdHk6IDE7DQp9DQoNCi5BbS1pbWctc2xpZGVyLWNvbnRhaW5lciAuYmxvZy1zbGlkZXIgLnN3aXBlci1zbGlkZS5zd2lwZXItc2xpZGUtYWN0aXZlIC5ibG9nLXNsaWRlcl9faW1ncyAub3Zlcmx5IHsNCiAgb3BhY2l0eTogMTsNCiAgYW5pbWF0aW9uOiAycyAxIHBsYXlBbmltZTsNCiAgLXdlYmtpdC1hbmltYXRpb246IDJzIDEgcGxheUFuaW1lOw0KICBkaXNwbGF5OiBibG9jazsNCn0NCg0KLkFtLWltZy1zbGlkZXItY29udGFpbmVyIC5ibG9nLXNsaWRlciAuc3dpcGVyLXNsaWRlLnN3aXBlci1zbGlkZS1hY3RpdmUgLmJsb2ctc2xpZGVyX19pbWdzIGltZy5tb3ZpZS1pbWFnZTpudGgtY2hpbGQoNSkgew0KICBhbmltYXRpb246IDEuNXMgMSBpbWdBbmltZTsNCiAgLXdlYmtpdC1hbmltYXRpb246IDEuNXMgMSBpbWdBbmltZTsNCiAgdHJhbnNpdGlvbi1kZWxheTogMC43czsNCiAgb3BhY2l0eTogMTsNCn0NCg0KLkFtLWltZy1zbGlkZXItY29udGFpbmVyIC5ibG9nLXNsaWRlciAuc3dpcGVyLXNsaWRlLnN3aXBlci1zbGlkZS1hY3RpdmUgLmJsb2ctc2xpZGVyX19pbWdzIC5vdmVybHkgew0KICBvcGFjaXR5OiAxOw0KICBhbmltYXRpb246IDJzIDEgcGxheUFuaW1lOw0KICAtd2Via2l0LWFuaW1hdGlvbjogMnMgMSBwbGF5QW5pbWU7DQogIGRpc3BsYXk6IGJsb2NrOw0KfQ0KDQouQW0taW1nLXNsaWRlci1jb250YWluZXIgLmJsb2ctc2xpZGVyIC5zd2lwZXItc2xpZGUuc3dpcGVyLXNsaWRlLWFjdGl2ZSAuYmxvZy1zbGlkZXJfX2ltZ3MgaW1nLm1vdmllLWltYWdlOm50aC1jaGlsZCg2KSB7DQogIGFuaW1hdGlvbjogMS41cyAxIGltZ0FuaW1lOw0KICAtd2Via2l0LWFuaW1hdGlvbjogMS41cyAxIGltZ0FuaW1lOw0KICB0cmFuc2l0aW9uLWRlbGF5OiAwLjhzOw0KICBvcGFjaXR5OiAxOw0KfQ0KDQouQW0taW1nLXNsaWRlci1jb250YWluZXIgLmJsb2ctc2xpZGVyIC5zd2lwZXItc2xpZGUuc3dpcGVyLXNsaWRlLWFjdGl2ZSAuYmxvZy1zbGlkZXJfX2ltZ3MgLm92ZXJseSB7DQogIG9wYWNpdHk6IDE7DQogIGFuaW1hdGlvbjogMnMgMSBwbGF5QW5pbWU7DQogIC13ZWJraXQtYW5pbWF0aW9uOiAycyAxIHBsYXlBbmltZTsNCiAgZGlzcGxheTogYmxvY2s7DQp9DQoNCi5BbS1pbWctc2xpZGVyLWNvbnRhaW5lciAuYmxvZy1zbGlkZXIgLnN3aXBlci1zbGlkZS5zd2lwZXItc2xpZGUtYWN0aXZlIC5ibG9nLXNsaWRlcl9faW1ncyBpbWcubW92aWUtaW1hZ2U6bnRoLWNoaWxkKDcpIHsNCiAgYW5pbWF0aW9uOiAxLjVzIDEgaW1nQW5pbWU7DQogIC13ZWJraXQtYW5pbWF0aW9uOiAxLjVzIDEgaW1nQW5pbWU7DQogIHRyYW5zaXRpb24tZGVsYXk6IDAuOXM7DQogIG9wYWNpdHk6IDE7DQp9DQoNCi5BbS1pbWctc2xpZGVyLWNvbnRhaW5lciAuYmxvZy1zbGlkZXIgLnN3aXBlci1zbGlkZS5zd2lwZXItc2xpZGUtYWN0aXZlIC5ibG9nLXNsaWRlcl9faW1ncyAub3Zlcmx5IHsNCiAgb3BhY2l0eTogMTsNCiAgYW5pbWF0aW9uOiAycyAxIHBsYXlBbmltZTsNCiAgLXdlYmtpdC1hbmltYXRpb246IDJzIDEgcGxheUFuaW1lOw0KICBkaXNwbGF5OiBibG9jazsNCn0NCg0KLkFtLWltZy1zbGlkZXItY29udGFpbmVyIC5ibG9nLXNsaWRlciAuc3dpcGVyLXNsaWRlLnN3aXBlci1zbGlkZS1hY3RpdmUgLmJsb2ctc2xpZGVyX19pbWdzIGltZy5tb3ZpZS1pbWFnZTpudGgtY2hpbGQoOCkgew0KICBhbmltYXRpb246IDEuNXMgMSBpbWdBbmltZTsNCiAgLXdlYmtpdC1hbmltYXRpb246IDEuNXMgMSBpbWdBbmltZTsNCiAgdHJhbnNpdGlvbi1kZWxheTogMXM7DQogIG9wYWNpdHk6IDE7DQp9DQoNCi5BbS1pbWctc2xpZGVyLWNvbnRhaW5lciAuYmxvZy1zbGlkZXIgLnN3aXBlci1zbGlkZS5zd2lwZXItc2xpZGUtYWN0aXZlIC5ibG9nLXNsaWRlcl9faW1ncyAub3Zlcmx5IHsNCiAgb3BhY2l0eTogMTsNCiAgYW5pbWF0aW9uOiAycyAxIHBsYXlBbmltZTsNCiAgLXdlYmtpdC1hbmltYXRpb246IDJzIDEgcGxheUFuaW1lOw0KICBkaXNwbGF5OiBibG9jazsNCn0NCg0KLkFtLWltZy1zbGlkZXItY29udGFpbmVyIC5ibG9nLXNsaWRlciAuc3dpcGVyLXNsaWRlLnN3aXBlci1zbGlkZS1hY3RpdmUgLmJsb2ctc2xpZGVyX19pbWdzIGltZy5tb3ZpZS1pbWFnZTpudGgtY2hpbGQoOSkgew0KICBhbmltYXRpb246IDEuNXMgMSBpbWdBbmltZTsNCiAgLXdlYmtpdC1hbmltYXRpb246IDEuNXMgMSBpbWdBbmltZTsNCiAgdHJhbnNpdGlvbi1kZWxheTogMS4xczsNCiAgb3BhY2l0eTogMTsNCn0NCg0KLkFtLWltZy1zbGlkZXItY29udGFpbmVyIC5ibG9nLXNsaWRlciAuc3dpcGVyLXNsaWRlLnN3aXBlci1zbGlkZS1hY3RpdmUgLmJsb2ctc2xpZGVyX19pbWdzIC5vdmVybHkgew0KICBvcGFjaXR5OiAxOw0KICBhbmltYXRpb246IDJzIDEgcGxheUFuaW1lOw0KICAtd2Via2l0LWFuaW1hdGlvbjogMnMgMSBwbGF5QW5pbWU7DQogIGRpc3BsYXk6IGJsb2NrOw0KfQ0KDQouQW0taW1nLXNsaWRlci1jb250YWluZXIgLmJsb2ctc2xpZGVyIC5zd2lwZXItc2xpZGUuc3dpcGVyLXNsaWRlLWFjdGl2ZSAuYmxvZy1zbGlkZXJfX2ltZ3MgaW1nLm1vdmllLWltYWdlOm50aC1jaGlsZCgxMCkgew0KICBhbmltYXRpb246IDEuNXMgMSBpbWdBbmltZTsNCiAgLXdlYmtpdC1hbmltYXRpb246IDEuNXMgMSBpbWdBbmltZTsNCiAgdHJhbnNpdGlvbi1kZWxheTogMS4yczsNCiAgb3BhY2l0eTogMTsNCn0NCg0KLkFtLWltZy1zbGlkZXItY29udGFpbmVyIC5ibG9nLXNsaWRlciAuc3dpcGVyLXNsaWRlLnN3aXBlci1zbGlkZS1hY3RpdmUgLmJsb2ctc2xpZGVyX19pbWdzIC5vdmVybHkgew0KICBvcGFjaXR5OiAxOw0KICBhbmltYXRpb246IDJzIDEgcGxheUFuaW1lOw0KICAtd2Via2l0LWFuaW1hdGlvbjogMnMgMSBwbGF5QW5pbWU7DQogIGRpc3BsYXk6IGJsb2NrOw0KfQ0KDQouQW0taW1nLXNsaWRlci1jb250YWluZXIgLmJsb2ctc2xpZGVyIC5zd2lwZXItc2xpZGUuc3dpcGVyLXNsaWRlLWFjdGl2ZSAuYmxvZy1zbGlkZXJfX2ltZ3MgaW1nLm1vdmllLWltYWdlOm50aC1jaGlsZCgxMSkgew0KICBhbmltYXRpb246IDEuNXMgMSBpbWdBbmltZTsNCiAgLXdlYmtpdC1hbmltYXRpb246IDEuNXMgMSBpbWdBbmltZTsNCiAgdHJhbnNpdGlvbi1kZWxheTogMS4zczsNCiAgb3BhY2l0eTogMTsNCn0NCg0KLkFtLWltZy1zbGlkZXItY29udGFpbmVyIC5ibG9nLXNsaWRlciAuc3dpcGVyLXNsaWRlLnN3aXBlci1zbGlkZS1hY3RpdmUgLmJsb2ctc2xpZGVyX19pbWdzIC5vdmVybHkgew0KICBvcGFjaXR5OiAxOw0KICBhbmltYXRpb246IDJzIDEgcGxheUFuaW1lOw0KICAtd2Via2l0LWFuaW1hdGlvbjogMnMgMSBwbGF5QW5pbWU7DQogIGRpc3BsYXk6IGJsb2NrOw0KfQ0KDQouQW0taW1nLXNsaWRlci1jb250YWluZXIgLmJsb2ctc2xpZGVyIC5zd2lwZXItc2xpZGUuc3dpcGVyLXNsaWRlLWFjdGl2ZSAuYmxvZy1zbGlkZXJfX2ltZ3MgaW1nLm1vdmllLWltYWdlOm50aC1jaGlsZCgxMikgew0KICBhbmltYXRpb246IDEuNXMgMSBpbWdBbmltZTsNCiAgLXdlYmtpdC1hbmltYXRpb246IDEuNXMgMSBpbWdBbmltZTsNCiAgdHJhbnNpdGlvbi1kZWxheTogMS40czsNCiAgb3BhY2l0eTogMTsNCn0NCg0KLkFtLWltZy1zbGlkZXItY29udGFpbmVyIC5ibG9nLXNsaWRlciAuc3dpcGVyLXNsaWRlLnN3aXBlci1zbGlkZS1hY3RpdmUgLmJsb2ctc2xpZGVyX19pbWdzIC5vdmVybHkgew0KICBvcGFjaXR5OiAxOw0KICBhbmltYXRpb246IDJzIDEgcGxheUFuaW1lOw0KICAtd2Via2l0LWFuaW1hdGlvbjogMnMgMSBwbGF5QW5pbWU7DQogIGRpc3BsYXk6IGJsb2NrOw0KfQ0KDQouQW0taW1nLXNsaWRlci1jb250YWluZXIgLmJsb2ctc2xpZGVyIC5zd2lwZXItc2xpZGUuc3dpcGVyLXNsaWRlLWFjdGl2ZSAuYmxvZy1zbGlkZXJfX2ltZ3MgaW1nLm1vdmllLWltYWdlOm50aC1jaGlsZCgxMykgew0KICBhbmltYXRpb246IDEuNXMgMSBpbWdBbmltZTsNCiAgLXdlYmtpdC1hbmltYXRpb246IDEuNXMgMSBpbWdBbmltZTsNCiAgdHJhbnNpdGlvbi1kZWxheTogMS41czsNCiAgb3BhY2l0eTogMTsNCn0NCg0KLkFtLWltZy1zbGlkZXItY29udGFpbmVyIC5ibG9nLXNsaWRlciAuc3dpcGVyLXNsaWRlLnN3aXBlci1zbGlkZS1hY3RpdmUgLmJsb2ctc2xpZGVyX19pbWdzIC5vdmVybHkgew0KICBvcGFjaXR5OiAxOw0KICBhbmltYXRpb246IDJzIDEgcGxheUFuaW1lOw0KICAtd2Via2l0LWFuaW1hdGlvbjogMnMgMSBwbGF5QW5pbWU7DQogIGRpc3BsYXk6IGJsb2NrOw0KfQ0KDQouQW0taW1nLXNsaWRlci1jb250YWluZXIgLmJsb2ctc2xpZGVyIC5zd2lwZXItc2xpZGUuc3dpcGVyLXNsaWRlLWFjdGl2ZSAuYmxvZy1zbGlkZXJfX2ltZ3MgaW1nLm1vdmllLWltYWdlOm50aC1jaGlsZCgxNCkgew0KICBhbmltYXRpb246IDEuNXMgMSBpbWdBbmltZTsNCiAgLXdlYmtpdC1hbmltYXRpb246IDEuNXMgMSBpbWdBbmltZTsNCiAgdHJhbnNpdGlvbi1kZWxheTogMS42czsNCiAgb3BhY2l0eTogMTsNCn0NCg0KLkFtLWltZy1zbGlkZXItY29udGFpbmVyIC5ibG9nLXNsaWRlciAuc3dpcGVyLXNsaWRlLnN3aXBlci1zbGlkZS1hY3RpdmUgLmJsb2ctc2xpZGVyX19pbWdzIC5vdmVybHkgew0KICBvcGFjaXR5OiAxOw0KICBhbmltYXRpb246IDJzIDEgcGxheUFuaW1lOw0KICAtd2Via2l0LWFuaW1hdGlvbjogMnMgMSBwbGF5QW5pbWU7DQogIGRpc3BsYXk6IGJsb2NrOw0KfQ0KDQouQW0taW1nLXNsaWRlci1jb250YWluZXIgLmJsb2ctc2xpZGVyIC5zd2lwZXItc2xpZGUuc3dpcGVyLXNsaWRlLWFjdGl2ZSAuYmxvZy1zbGlkZXJfX2ltZ3MgaW1nLm1vdmllLWltYWdlOm50aC1jaGlsZCgxNSkgew0KICBhbmltYXRpb246IDEuNXMgMSBpbWdBbmltZTsNCiAgLXdlYmtpdC1hbmltYXRpb246IDEuNXMgMSBpbWdBbmltZTsNCiAgdHJhbnNpdGlvbi1kZWxheTogMS43czsNCiAgb3BhY2l0eTogMTsNCn0NCg0KLkFtLWltZy1zbGlkZXItY29udGFpbmVyIC5ibG9nLXNsaWRlciAuc3dpcGVyLXNsaWRlLnN3aXBlci1zbGlkZS1hY3RpdmUgLmJsb2ctc2xpZGVyX19pbWdzIC5vdmVybHkgew0KICBvcGFjaXR5OiAxOw0KICBhbmltYXRpb246IDJzIDEgcGxheUFuaW1lOw0KICAtd2Via2l0LWFuaW1hdGlvbjogMnMgMSBwbGF5QW5pbWU7DQogIGRpc3BsYXk6IGJsb2NrOw0KfQ0KDQpAa2V5ZnJhbWVzIHBsYXlBbmltZSB7DQogIGZyb20gew0KICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxMDBweCk7DQogIH0NCiAgNTAlIHsNCiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTMwcHgpOw0KICB9DQogIHRvIHsNCiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMHB4KTsNCiAgfQ0KfQ0KDQouQW0taW1nLXNsaWRlci1jb250YWluZXIgLmJsb2ctc2xpZGVyIC5zd2lwZXItc2xpZGUuc3dpcGVyLXNsaWRlLWFjdGl2ZSAuYmxvZy1zbGlkZXJfX2ltZ3MgaW1nLmJhY2staW1hZ2U6bnRoLWNoaWxkKDEpIHsNCiAgdHJhbnNpdGlvbi1kZWxheTogMC4zczsNCiAgYW5pbWF0aW9uOiA0LjVzIDEgYmFja2ltZ0FuaW1lOw0KICAtd2Via2l0LWFuaW1hdGlvbjogNC41cyAxIGJhY2tpbWdBbmltZTsNCn0NCg0KLkFtLWltZy1zbGlkZXItY29udGFpbmVyIC5ibG9nLXNsaWRlciAuc3dpcGVyLXNsaWRlLnN3aXBlci1zbGlkZS1hY3RpdmUgLmJsb2ctc2xpZGVyX19pbWdzIGltZy5iYWNrLWltYWdlOm50aC1jaGlsZCgyKSB7DQogIHRyYW5zaXRpb24tZGVsYXk6IDAuNHM7DQogIGFuaW1hdGlvbjogNC41cyAxIGJhY2tpbWdBbmltZTsNCiAgLXdlYmtpdC1hbmltYXRpb246IDQuNXMgMSBiYWNraW1nQW5pbWU7DQp9DQoNCi5BbS1pbWctc2xpZGVyLWNvbnRhaW5lciAuYmxvZy1zbGlkZXIgLnN3aXBlci1zbGlkZS5zd2lwZXItc2xpZGUtYWN0aXZlIC5ibG9nLXNsaWRlcl9faW1ncyBpbWcuYmFjay1pbWFnZTpudGgtY2hpbGQoMykgew0KICB0cmFuc2l0aW9uLWRlbGF5OiAwLjVzOw0KICBhbmltYXRpb246IDQuNXMgMSBiYWNraW1nQW5pbWU7DQogIC13ZWJraXQtYW5pbWF0aW9uOiA0LjVzIDEgYmFja2ltZ0FuaW1lOw0KfQ0KDQouQW0taW1nLXNsaWRlci1jb250YWluZXIgLmJsb2ctc2xpZGVyIC5zd2lwZXItc2xpZGUuc3dpcGVyLXNsaWRlLWFjdGl2ZSAuYmxvZy1zbGlkZXJfX2ltZ3MgaW1nLmJhY2staW1hZ2U6bnRoLWNoaWxkKDQpIHsNCiAgdHJhbnNpdGlvbi1kZWxheTogMC42czsNCiAgYW5pbWF0aW9uOiA0LjVzIDEgYmFja2ltZ0FuaW1lOw0KICAtd2Via2l0LWFuaW1hdGlvbjogNC41cyAxIGJhY2tpbWdBbmltZTsNCn0NCg0KLkFtLWltZy1zbGlkZXItY29udGFpbmVyIC5ibG9nLXNsaWRlciAuc3dpcGVyLXNsaWRlLnN3aXBlci1zbGlkZS1hY3RpdmUgLmJsb2ctc2xpZGVyX19pbWdzIGltZy5iYWNrLWltYWdlOm50aC1jaGlsZCg1KSB7DQogIHRyYW5zaXRpb24tZGVsYXk6IDAuN3M7DQogIGFuaW1hdGlvbjogNC41cyAxIGJhY2tpbWdBbmltZTsNCiAgLXdlYmtpdC1hbmltYXRpb246IDQuNXMgMSBiYWNraW1nQW5pbWU7DQp9DQoNCi5BbS1pbWctc2xpZGVyLWNvbnRhaW5lciAuYmxvZy1zbGlkZXIgLnN3aXBlci1zbGlkZS5zd2lwZXItc2xpZGUtYWN0aXZlIC5ibG9nLXNsaWRlcl9faW1ncyBpbWcuYmFjay1pbWFnZTpudGgtY2hpbGQoNikgew0KICB0cmFuc2l0aW9uLWRlbGF5OiAwLjhzOw0KICBhbmltYXRpb246IDQuNXMgMSBiYWNraW1nQW5pbWU7DQogIC13ZWJraXQtYW5pbWF0aW9uOiA0LjVzIDEgYmFja2ltZ0FuaW1lOw0KfQ0KDQouQW0taW1nLXNsaWRlci1jb250YWluZXIgLmJsb2ctc2xpZGVyIC5zd2lwZXItc2xpZGUuc3dpcGVyLXNsaWRlLWFjdGl2ZSAuYmxvZy1zbGlkZXJfX2ltZ3MgaW1nLmJhY2staW1hZ2U6bnRoLWNoaWxkKDcpIHsNCiAgdHJhbnNpdGlvbi1kZWxheTogMC45czsNCiAgYW5pbWF0aW9uOiA0LjVzIDEgYmFja2ltZ0FuaW1lOw0KICAtd2Via2l0LWFuaW1hdGlvbjogNC41cyAxIGJhY2tpbWdBbmltZTsNCn0NCg0KLkFtLWltZy1zbGlkZXItY29udGFpbmVyIC5ibG9nLXNsaWRlciAuc3dpcGVyLXNsaWRlLnN3aXBlci1zbGlkZS1hY3RpdmUgLmJsb2ctc2xpZGVyX19pbWdzIGltZy5iYWNrLWltYWdlOm50aC1jaGlsZCg4KSB7DQogIHRyYW5zaXRpb24tZGVsYXk6IDFzOw0KICBhbmltYXRpb246IDQuNXMgMSBiYWNraW1nQW5pbWU7DQogIC13ZWJraXQtYW5pbWF0aW9uOiA0LjVzIDEgYmFja2ltZ0FuaW1lOw0KfQ0KDQouQW0taW1nLXNsaWRlci1jb250YWluZXIgLmJsb2ctc2xpZGVyIC5zd2lwZXItc2xpZGUuc3dpcGVyLXNsaWRlLWFjdGl2ZSAuYmxvZy1zbGlkZXJfX2ltZ3MgaW1nLmJhY2staW1hZ2U6bnRoLWNoaWxkKDkpIHsNCiAgdHJhbnNpdGlvbi1kZWxheTogMS4xczsNCiAgYW5pbWF0aW9uOiA0LjVzIDEgYmFja2ltZ0FuaW1lOw0KICAtd2Via2l0LWFuaW1hdGlvbjogNC41cyAxIGJhY2tpbWdBbmltZTsNCn0NCg0KLkFtLWltZy1zbGlkZXItY29udGFpbmVyIC5ibG9nLXNsaWRlciAuc3dpcGVyLXNsaWRlLnN3aXBlci1zbGlkZS1hY3RpdmUgLmJsb2ctc2xpZGVyX19pbWdzIGltZy5iYWNrLWltYWdlOm50aC1jaGlsZCgxMCkgew0KICB0cmFuc2l0aW9uLWRlbGF5OiAxLjJzOw0KICBhbmltYXRpb246IDQuNXMgMSBiYWNraW1nQW5pbWU7DQogIC13ZWJraXQtYW5pbWF0aW9uOiA0LjVzIDEgYmFja2ltZ0FuaW1lOw0KfQ0KDQouQW0taW1nLXNsaWRlci1jb250YWluZXIgLmJsb2ctc2xpZGVyIC5zd2lwZXItc2xpZGUuc3dpcGVyLXNsaWRlLWFjdGl2ZSAuYmxvZy1zbGlkZXJfX2ltZ3MgaW1nLmJhY2staW1hZ2U6bnRoLWNoaWxkKDExKSB7DQogIHRyYW5zaXRpb24tZGVsYXk6IDEuM3M7DQogIGFuaW1hdGlvbjogNC41cyAxIGJhY2tpbWdBbmltZTsNCiAgLXdlYmtpdC1hbmltYXRpb246IDQuNXMgMSBiYWNraW1nQW5pbWU7DQp9DQoNCi5BbS1pbWctc2xpZGVyLWNvbnRhaW5lciAuYmxvZy1zbGlkZXIgLnN3aXBlci1zbGlkZS5zd2lwZXItc2xpZGUtYWN0aXZlIC5ibG9nLXNsaWRlcl9faW1ncyBpbWcuYmFjay1pbWFnZTpudGgtY2hpbGQoMTIpIHsNCiAgdHJhbnNpdGlvbi1kZWxheTogMS40czsNCiAgYW5pbWF0aW9uOiA0LjVzIDEgYmFja2ltZ0FuaW1lOw0KICAtd2Via2l0LWFuaW1hdGlvbjogNC41cyAxIGJhY2tpbWdBbmltZTsNCn0NCg0KLkFtLWltZy1zbGlkZXItY29udGFpbmVyIC5ibG9nLXNsaWRlciAuc3dpcGVyLXNsaWRlLnN3aXBlci1zbGlkZS1hY3RpdmUgLmJsb2ctc2xpZGVyX19pbWdzIGltZy5iYWNrLWltYWdlOm50aC1jaGlsZCgxMykgew0KICB0cmFuc2l0aW9uLWRlbGF5OiAxLjVzOw0KICBhbmltYXRpb246IDQuNXMgMSBiYWNraW1nQW5pbWU7DQogIC13ZWJraXQtYW5pbWF0aW9uOiA0LjVzIDEgYmFja2ltZ0FuaW1lOw0KfQ0KDQouQW0taW1nLXNsaWRlci1jb250YWluZXIgLmJsb2ctc2xpZGVyIC5zd2lwZXItc2xpZGUuc3dpcGVyLXNsaWRlLWFjdGl2ZSAuYmxvZy1zbGlkZXJfX2ltZ3MgaW1nLmJhY2staW1hZ2U6bnRoLWNoaWxkKDE0KSB7DQogIHRyYW5zaXRpb24tZGVsYXk6IDEuNnM7DQogIGFuaW1hdGlvbjogNC41cyAxIGJhY2tpbWdBbmltZTsNCiAgLXdlYmtpdC1hbmltYXRpb246IDQuNXMgMSBiYWNraW1nQW5pbWU7DQp9DQoNCi5BbS1pbWctc2xpZGVyLWNvbnRhaW5lciAuYmxvZy1zbGlkZXIgLnN3aXBlci1zbGlkZS5zd2lwZXItc2xpZGUtYWN0aXZlIC5ibG9nLXNsaWRlcl9faW1ncyBpbWcuYmFjay1pbWFnZTpudGgtY2hpbGQoMTUpIHsNCiAgdHJhbnNpdGlvbi1kZWxheTogMS43czsNCiAgYW5pbWF0aW9uOiA0LjVzIDEgYmFja2ltZ0FuaW1lOw0KICAtd2Via2l0LWFuaW1hdGlvbjogNC41cyAxIGJhY2tpbWdBbmltZTsNCn0NCg0KQGtleWZyYW1lcyBpbWdBbmltZSB7DQogIGZyb20gew0KICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWCgtMTIwcHgpOw0KICAgIG9wYWNpdHk6IDA7DQogIH0NCiAgdG8gew0KICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWCgwcHgpOw0KICB9DQp9DQoNCkBrZXlmcmFtZXMgYmFja2ltZ0FuaW1lIHsNCiAgZnJvbSB7DQogICAgb3BhY2l0eTogMC4yOw0KICB9DQogIHRvIHsNCiAgICBvcGFjaXR5OiAxOw0KICB9DQp9DQoNCi5BbS1pbWctc2xpZGVyLWNvbnRhaW5lciAuYmxvZy1zbGlkZXIgLnN3aXBlci1zbGlkZSAubW92aWUtaW1hZ2UtY29udGFpbmVyIHsNCiAgcG9zaXRpb246IHJlbGF0aXZlOw0KICB3aWR0aDogMTUwcHg7DQogIGhlaWdodDogMTUwcHg7DQp9DQoNCi5BbS1pbWctc2xpZGVyLWNvbnRhaW5lciAuYmxvZy1zbGlkZXIgLnN3aXBlci1zbGlkZSAubW92aWUtaW1hZ2UtY29udGFpbmVyIGRpdi5vdmVybHkgew0KICBwb3NpdGlvbjogYWJzb2x1dGU7DQogIGJvdHRvbTogLTEwcHg7DQogIGxlZnQ6IDA7DQogIHJpZ2h0OiAwOw0KICBkaXNwbGF5OiBub25lOw0KfQ0KDQouQW0taW1nLXNsaWRlci1jb250YWluZXIgLmJsb2ctc2xpZGVyIC5zd2lwZXItc2xpZGUgLm1vdmllLWltYWdlLWNvbnRhaW5lciBkaXYub3Zlcmx5IGEgew0KICBiYWNrZ3JvdW5kLWNvbG9yOiAjMzQ4NWZmOw0KICB3aWR0aDogNTBweDsNCiAgaGVpZ2h0OiA1MHB4Ow0KICBkaXNwbGF5OiBmbGV4Ow0KICBtYXJnaW46IGF1dG87DQogIGFsaWduLWl0ZW1zOiBjZW50ZXI7DQogIGp1c3RpZnktY29udGVudDogY2VudGVyOw0KICBib3JkZXItcmFkaXVzOiAxMDAlOw0KICBmb250LXNpemU6IHh4LWxhcmdlOw0KICBjb2xvcjogd2hpdGU7DQp9DQoNCi5BbS1pbWctc2xpZGVyLWNvbnRhaW5lciAuYmxvZy1zbGlkZXIgLnN3aXBlci1zbGlkZSAubW92aWUtaW1hZ2UtY29udGFpbmVyIC5tb3ZpZS1pbWFnZSB7DQogIHdpZHRoOiAxMDAlOw0KICBoZWlnaHQ6IDEwMCU7DQogIGJvcmRlci1yYWRpdXM6IDBweDsNCn0NCg0KLkFtLWltZy1zbGlkZXItY29udGFpbmVyIC5ibG9nLXNsaWRlciAuc3dpcGVyLXNsaWRlIC5iYWNrLWltYWdlIHsNCiAgcG9zaXRpb246IGFic29sdXRlOw0KICBsZWZ0OiAwOw0KICByaWdodDogMDsNCiAgdG9wOiAwOw0KICBib3R0b206IDA7DQogIHdpZHRoOiAxMDAlOw0KICBoZWlnaHQ6IDI1MHB4Ow0KICBvYmplY3QtZml0OiBjb3ZlcjsNCiAgZmlsdGVyOiBibHVyKDNweCkgYnJpZ2h0bmVzcyg1MCUpOw0KfQ0KDQouQW0taW1nLXNsaWRlci1jb250YWluZXIgLmJsb2ctc2xpZGVyX19jb250ZW50ID4gKiB7DQogIG9wYWNpdHk6IDA7DQogIHRyYW5zZm9ybTogdHJhbnNsYXRlWCgxMDBweCk7DQogIHRyYW5zaXRpb246IGFsbCAxLjVzOw0KfQ0KDQouQW0taW1nLXNsaWRlci1jb250YWluZXIgLmJsb2ctc2xpZGVyX190aXRsZSB7DQoJY29sb3I6d2hpdGU7DQogIGZvbnQtc2l6ZTogbWVkaXVtOw0KICBtYXJnaW4tYm90dG9tOiAxMHB4Ow0KfQ0KDQouQW0taW1nLXNsaWRlci1jb250YWluZXIgLmJsb2ctc2xpZGVyX190ZXh0IHsNCiAgZm9udC1zaXplOiAxNXB4Ow0KICBsaW5lLWhlaWdodDogMS4yZW07DQogIGNvbG9yOiAjYWFhYWFhOw0KfQ0KDQouQW0taW1nLXNsaWRlci1jb250YWluZXIgLmJsb2ctc2xpZGVyX19yYXRlIHsNCiAgZm9udC1zaXplOiAxNXB4Ow0KICBtYXJnaW46IDEwcHggMHB4Ow0KICBkaXNwbGF5OiBibG9jazsNCiAgZm9udC13ZWlnaHQ6IDkwMDsNCiAgY29sb3I6IHJnYmEoMjU1LCAyMTcsIDAsIDAuNCk7DQp9DQoNCi5BbS1pbWctc2xpZGVyLWNvbnRhaW5lciAuYmxvZy1zbGlkZXJfX2ltZyB7DQogIG9wYWNpdHk6IDA7DQp9");
+</style>
+<h1></h1>
+<script async="" crossorigin="anonymous" src="https://www.googletagmanager.com/gtag/js?id=UA-61066224-5"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-61066224-5', {'sample_rate': 10,'use_amp_client_id': true});
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "mp3play",
+        "url": "https://mp3play.store",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://mp3play.store/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Corporation",
+        "name": "mp3play",
+        "url": "https://mp3play.store",
+        "logo": "static.mp3play/mobile/static/imgs/screen1.jpg",
+        "sameAs": [
+            "https://www.facebook.com/mp3play",
+            "https://twitter.com/mp3play",
+            "https://vk.com/mp3playvk",
+            "https://www.youtube.com/channel/UCbCOKdnt1yYk4S3I4a034XQ"
+        ]
+    }
+</script>
+<script type="text/javascript">
+
+        var dt_enable_adsense = '1';
+
+    </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/><script type="text/javascript">var ezouid = "1";</script><base href="https://www.mp3play.store/"><script type='text/javascript'>
+var ezoTemplate = 'old_site_mobile_noads';
+if(typeof ezouid == 'undefined')
+{
+    var ezouid = 'none';
+}
+var ezoFormfactor = '2';
+var ezo_elements_to_check = Array();
+</script><!-- START EZHEAD -->
+<script data-ezscrex="false" type='text/javascript'>
+var soc_app_id = '0';
+var did = 474295;
+var ezdomain = 'mp3play.store';
+var ezoicSearchable = 1;
+</script>
+<!--{jquery}-->
+<!-- END EZHEAD -->
+<script data-ezscrex="false" type="text/javascript" data-cfasync="false">var _ezaq = {"ab_test_id":"mod58-c","ad_cache_level":1,"ad_lazyload_version":0,"ad_load_version":0,"city":"","country":"PK","days_since_last_visit":0,"domain_id":474295,"engaged_time_visit":22,"ezcache_level":2,"ezcache_skip_code":0,"form_factor_id":2,"framework_id":2,"is_return_visitor":true,"is_sitespeed":0,"last_page_load":"1686225315901","last_pageview_id":"f1e18286-9b90-4021-6e11-072e01396108","lt_cache_level":0,"metro_code":0,"page_ad_positions":"","page_view_count":3,"page_view_id":"8b3f5166-66b8-4476-4bef-32a6173632de","position_selection_id":0,"postal_code":"","pv_event_count":0,"response_size_orig":51654,"response_time_orig":3,"serverid":"i-088990217fd8849c9","state":"PB","t_epoch":1686225320,"template_id":122,"time_on_site_visit":47,"url":"https://www.mp3play.store/","user_id":0,"weather_precipitation":0,"weather_summary":"","weather_temperature":0,"word_count":488,"worst_bad_word_level":0};var _ezExtraQueries = "&ez_orig=1";</script>
+<script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
+function create_ezolpl(pvID, rv) {
+    var d = new Date();
+    d.setTime(d.getTime() + (365*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    __ez.ck.setByCat("ezux_lpl_474295=" + new Date().getTime() + "|" + pvID + "|" + rv + "; " + expires, 3);
+}
+function attach_ezolpl(pvID, rv) {
+    if (document.readyState === "complete") {
+        create_ezolpl(pvID, rv);
+    }
+    if(window.attachEvent) {
+        window.attachEvent("onload", create_ezolpl, pvID, rv);
+    } else {
+        if(window.onload) {
+            var curronload = window.onload;
+            var newonload = function(evt) {
+                curronload(evt);
+                create_ezolpl(pvID, rv);
+            };
+            window.onload = newonload;
+        } else {
+            window.onload = create_ezolpl.bind(null, pvID, rv);
+        }
+    }
+}
+
+__ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", ["8b3f5166-66b8-4476-4bef-32a6173632de", "true"], false, ['/detroitchicago/boise.js'], true, false, false, false);
+</script>
+<script type="text/javascript">var _audins_dom="mp3play_store",_audins_did=474295;__ez.queue.addFile('/detroitchicago/cmbv2.js', '/detroitchicago/cmbv2.js?gcb=195-0&cb=04-3y02-8y06-13y07-2y1d-7y0b-6y0d-23y17-4y1b-5y20-4y25-3y33-4y59-2&cmbcb=147&sj=x04x02x06x07x1dx0bx0dx17x1bx20x25x33x59', true, [], true, false, true, false);</script>
+<script type="text/javascript" defer>__ez.queue.addFile('/detroitchicago/cmbdv2.js', '/detroitchicago/cmbdv2.js?gcb=195-0&cb=03-8y0c-6y1c-5&cmbcb=147&sj=x03x0cx1c', true, ['/detroitchicago/cmbv2.js'], true, false, true, false);</script></head>
+
+
+<body>
+<div class="shadow" id="shadow" onclick="closeMenu()"></div>
+<div class="menu" id="menu">
+<div class="menu-btn menu-btn-close" onclick="closeMenu()">
+<div class="bar_1"></div>
+<div class="bar_2"></div>
+<div class="bar_3"></div>
+</div>
+<div class="menu-body" id="menu-body">
+<ul class="menu-group menu-border">
+
+<div class="menu-user-layer">
+	<center><li><a title="mp3play" class="logo" href="/"><img src="images/icon.png" weight="85" height="30" alt="banner"/></a></li>
+</center></alt="banner"></h2></div>
+</a>
+</li>
+</ul>
+<div class="menu-info">
+<ul class="menu-group menu-border">	
+<li>
+<a href="#">
+<div class="menu-layer">
+<i class="fa fa-home w3-text-teal" style="font-size:30px"></i>
+<span class="menu-text">Home</span>
+</div>
+</a>
+</li>
+<li>
+
+</li></ul></div>
+
+
+<li>
+<a href="about/dmca.html">
+<div class="menu-layer">
+<i class="fa fa-copyright w3-text-teal" style="font-size:30px"></i>
+<span class="menu-text">DMCA</span>
+</div>
+</a>
+</li>
+<li>
+<a href="about/about.html">
+<div class="menu-layer">
+<i class="fa fa-question-circle w3-text-teal" style="font-size:30px"></i>
+<span class="menu-text">About us</span>
+</div>
+</a>
+</li>
+<li>
+<a href="https://youtube.com/channel/UCxmUiQhgrAveYU8RPefN2HA">
+<div class="menu-layer">
+<i class="fa fa-address-book w3-text-teal" style="font-size:26px"></i>
+<span class="menu-text">Contact us</span>
+
+</div>
+</a>
+</li>
+<li>
+<a> <i> </i></a>
+<div class="container">
+ <ul style="margin-bottom:-0px;" class="icons">
+ <a href="https://www.facebook.com/somiawan29"> <li class="facebook"><i class="fa fa-facebook"></i></li></a>
+  <a href="https://github.com/worldapk"> <li class="instagram"><i class="fa fa-github"></i></li></a>
+  <a href="https://chat.whatsapp.com/KSChHdqjQCmJQJiUbFP1Ju"> <li class="whatsapp"><i class="fa fa-whatsapp"></i></li></a>
+ <a href="https://youtube.com/channel/UCxmUiQhgrAveYU8RPefN2HA">  <li class="twitter"><i class="fa fa-youtube"></i></li></a>
+ </ul>
+</div> 
+</li><li class="menu-last">
+ 
+</li>
+
+</div>
+</div>
+
+<div class="nav">
+<div class="n">
+<div class="menu-btn" onclick="openMenu()">
+<svg style="margin-top:-8px;margin-left:3px;color: white" width="38" height="39" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 5C3 4.44772 3.44772 4 4 4H16C16.5523 4 17 4.44772 17 5C17 5.55228 16.5523 6 16 6H4C3.44772 6 3 5.55228 3 5Z" fill="white"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 10C3 9.44772 3.44772 9 4 9H10C10.5523 9 11 9.44772 11 10C11 10.5523 10.5523 11 10 11H4C3.44772 11 3 10.5523 3 10Z" fill="white"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 15C3 14.4477 3.44772 14 4 14H16C16.5523 14 17 14.4477 17 15C17 15.5523 16.5523 16 16 16H4C3.44772 16 3 15.5523 3 15Z" fill="white"></path> </svg>
+</div>
+<div class="c">
+<ul class="nowrap">
+<li><a title="mp3play" class="logo" href="/"><img src="images/icon.png" weight="85" height="25" alt="Logo"/></a></li>
+
+</ul>
+</div>
+<div class="r"><a href="searching.html"> <title="search apk"=""><img src="static.mp3play.com/mobile/static/imgs/menu_search.png" alt="Search APK" width="20px" height="20px"/></title="search></a></div>
+</div>
+</div>
+
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+     
+     
+<!-- partial:index.partial.html -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <section class="Am-img-slider-container">
+        <div class="swiper blog-slider">
+            <div class="swiper-wrapper">
+                <!-- slide -->
+                <div class="swiper-slide">
+                    <div class="blog-slider__imgs">
+
+                        <img class="back-image" alt="" src="New Release/icons/badshah.webp"/>
+                        <div class="movie-image-container">
+
+                            <img class="movie-image  blog-slider__img" alt="" src="New Release/icons/badshah.webp"/>
+                            <div class="overly">
+                                <a href="New Release/Sanak.html" title="-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18a1 1 0 0 0 0-1.69L9.54 5.98A.998.998 0 0 0 8 6.82z"></path>
+                                    </svg>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-slider__content">
+                        <h2 class="blog-slider__title">
+                            Sanak
+                        </h2>
+                        <p class="blog-slider__text">
+                            Sanak (3:00 AM Sessions) is a Hindi album released in 2023. Music Of This Song Composed By Badshah.
+                        </p>
+                        <span class="blog-slider__rate">
+                            YouTube 39M Views 
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="blog-slider__imgs">
+                        <img class="back-image" alt="" src="Most Popular/icons/jassa.webp"/>
+                        <div class="movie-image-container">
+
+                            <img class="movie-image  blog-slider__img" alt="" src="Most Popular/icons/jassa.webp"/>
+                            <div class="overly">
+                                <a href="Most Popular/icons/Spain.html" title="-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18a1 1 0 0 0 0-1.69L9.54 5.98A.998.998 0 0 0 8 6.82z"></path>
+                                    </svg>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-slider__content">
+                        <h2 class="blog-slider__title">
+                            Spain
+                        </h2>
+                        <p class="blog-slider__text">
+                            Spain (Extended Version) is a Punjabi Song released in 2023. Music Of This Song Composed By JASSA DHILLON.
+                        </p>
+                        <span class="blog-slider__rate">
+                            YouTube 26M Views 
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="blog-slider__imgs">
+                        <img class="back-image" alt="" src="Most Popular/icons/emiway3.webp"/>
+                        <div class="movie-image-container">
+
+                            <img class="movie-image  blog-slider__img" alt="" src="Most Popular/icons/emiway3.webp"/>
+                            <div class="overly">
+                                <a href="Most Popular/Company.html" title="-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18a1 1 0 0 0 0-1.69L9.54 5.98A.998.998 0 0 0 8 6.82z"></path>
+                                    </svg>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-slider__content">
+                        <h2 class="blog-slider__title">
+                            Company 
+                        </h2>
+                        <p class="blog-slider__text">
+
+                            Company Song released in 2023. Music Of This Song Composed By Emiway Bantai &amp; Lyrics Of This Song Has Been Written By Emiway Bantai..
+                        </p>
+                        <span class="blog-slider__rate">
+                            YouTube 128M Views 
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="blog-slider__imgs">
+                        <img class="back-image" alt="" src="Most Popular/icons/rema.webp"/>
+                        <div class="movie-image-container">
+
+                            <img class="movie-image  blog-slider__img" alt="" src="Most Popular/icons/rema.webp"/>
+                            <div class="overly">
+                                <a href="Most Popular/Clam-Down.html" title="-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18a1 1 0 0 0 0-1.69L9.54 5.98A.998.998 0 0 0 8 6.82z"></path>
+                                    </svg>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-slider__content">
+                        <h2 class="blog-slider__title">
+                            Clam Down
+                        </h2>
+                        <p class="blog-slider__text">
+
+                            &#34;Calm Down&#34; is a song by Nigerian singer Rema, from his debut studio album Rave &amp; Roses (2022). It was released on 11 February 2022
+                        </p>
+                        <span class="blog-slider__rate">
+                            YouTube 469M Views
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="blog-slider__imgs">
+                        <img class="back-image  blog-slider__backimg" alt="" src="Most Popular/icons/rooh.webp"/>
+                        <div class="movie-image-container">
+
+                            <img class="movie-image  blog-slider__img" alt="" src="Most Popular/icons/rooh.webp"/>
+                            <div class="overly">
+                                <a href="Most Popular/Rooh-E-Daari.html" title="-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18a1 1 0 0 0 0-1.69L9.54 5.98A.998.998 0 0 0 8 6.82z"></path>
+                                    </svg>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-slider__content">
+                        <h2 class="blog-slider__title">
+                            Rooh E Dari
+                        </h2>
+                        <p class="blog-slider__text">
+
+                            Rooh-E-Daari Lyrics is latest Hindi song by Altamash Faridi featuring Karan Mehra &amp; Sana Sultaan and Lyrics panned by Abhishek Talented while music composed by Amol – Abhishek.
+                        </p>
+                        <span class="blog-slider__rate">
+                            YouTube 20M Views 
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<!-- partial -->
+  <script>
+var swiper = new Swiper(".blog-slider", {
+            loop: true,
+            slidesPerView: "1",
+            speed: 500,
+            effect: "coverflow",
+            coverflowEffect: {
+                slideShadows: false,
+            },
+            mousewheel: {
+                invert: false,
+            },
+            autoplay: {
+                delay: 5000,
+            },
+            breakpoints: {
+                0: {
+                    effect: "slide",
+                    centeredSlides: false,
+                },
+                768: {
+                    slidesPerView: "2",
+                    centeredSlides: true,
+                },
+                1200: {
+                    slidesPerView: "3",
+                    centeredSlides: true,
+                }
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                type: "fraction"
+            },
+
+        });
+</script>
+<br>
+<div class="right">
+    <div class="aegon module right_mp3play">
+        <a href="Popular Ringtone/YouTube-Audio-Downloader.html" rel="noopener" target="_blank">
+            <img class="icon" alt="Use mp3play YouTube audio converter" src="https://github.com/Mp3playpro/Mp3playpro/blob/main/images/youtube-music-vector-graphics-youtube-music-computer-icons-youtube-7ab4a9dab1224288487076b7d6e03f29.png?raw=true" width="40" height="40" />
+            <div class="text">
+                <div class="name one-line">YouTube Mp3 Downloader<span class="score">Free</span></div>
+                <div class="desc">Download YouTube Video To Mp3</div>
+            </div>
+            <div class="button">
+                Try Now
+            </div>
+        </a>
+    </div>
+</div> 
+<br>
+<div class="hd">
+<ul><li class="on"></li><li></li><li></li><li></li></ul>
+</div>
+
+
+<div class="list-wrap dt-card-popular-games-24h" style="margin-bottom: 10px;">
+<div class="apk-list-with-download showBadge"> 
+ 
+	<div class="home-prefecture">
+<div class="home-prefecture-head">
+<div class="common-title">
+<div class="common-title-content">
+<div class="common-title-content-name">
+<div class="font-common-line-1"
+style="font-weight: 900;border-bottom: 3px solid #24cd77;font-size: 15px;font-family: Helvetica;
+  display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-playlist-add" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M19 8h-14"></path> <path d="M5 12h9"></path> <path d="M11 16h-6"></path> <path d="M15 16h6"></path> <path d="M18 13v6"></path> </svg>New Release 
+</div>
+</div>
+<a href="New Release/More.html" class="beautify" style="
+  width:20px;
+  
+  font-size: 18px;
+  background: 
+  line-height: 30px;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  background:#f0f8ff;
+  border-radius: 30%;
+  
+  "> »
+</a>
+</div>
+</div>
+</div>
+<br/>
+<!-- Section (1) -->
+<div class="left">
+    <div class="module discover">
+        
+        <div class="mp3-list-1001 no-scrollbar enable-wrap">
+            <a class="mp3" title="Boyfriend Part 1 Dino james 2023" href="New Release/Boyfriend-part-1.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Boyfriend Part 1 Dino james 2023"
+                 
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="New Release/icons/dino.webp"
+                        data-srcset="New Release/icons/dino.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Boyfriend Part 1 Dino james 2023</div>
+                
+            </a>
+                    <a class="mp3" title="Tujh Pe Pyaar Yo Yo Honey Singh" href="New Release/Tujh-Pe-Pyaar.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Tujh Pe Pyaar Yo Yo Honey Singh"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="New Release/icons/honey.webp"
+                        data-srcset="New Release/icons/honey.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Tujh Pe Pyaar Yo Yo Honey Singh</div>
+                
+            </a>
+        <a class="mp3" title="Maan Mari jaan king &amp; Nick Jonas" href="New Release/Maan-Meri-Jaan.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Maan Mari jaan king &amp; Nick Jonas"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="New Release/icons/king.webp"
+                        data-srcset="New Release/icons/king.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Maan Mari jaan king &amp; Nick Jonas</div>
+                
+            </a>
+        <a class="mp3" title="Routine Gur Sidhu &amp; Jasmine Sandles" href="New Release/Routine.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Routine Gur Sidhu &amp; Jasmine Sandles"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="New Release/icons/gur.webp"
+                        data-srcset="New Release/icons/gur.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Routine Gur Sidhu &amp; Jasmine Sandles</div>
+                
+            </a>
+        <a class="mp3" title="Door Hove Gey Jessie Gill 2023" href="New Release/Door-Hove-Gay.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Door Hove Gey Jessie Gill 2023"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="New Release/icons/jessi.webp"
+                        data-srcset="New Release/icons/jessi.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Door Hove Gey Jessie Gill 2023</div>
+                
+            </a>
+        <a class="mp3" title="Shadi Krogi Toney Kakkar 2023" href="New Release/Shadi-Krogi.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Shadi Krogi Toney Kakkar 2023"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="New Release/icons/toney.webp"
+                        data-srcset="New Release/icons/toney.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Shadi Krogi Toney Kakkar 2023</div>
+                
+            </a>
+        <a class="mp3" title="INFINITY Mickey Singh 2023" href="New Release/INFINITY.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="INFINITY Mickey Singh 2023"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="New Release/icons/mickey.webp"
+                        data-srcset="New Release/icons/mickey.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">INFINITY Mickey Singh 2023</div>
+                
+            </a>
+                    <a class="mp3" title="We Made it Permish Verma 2023" href="New Release/We-Made-it.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="We Made it Permish Verma 2023"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="New Release/icons/permish.webp"
+                        data-srcset="New Release/icons/permish.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">We Made it Permish Verma 2023</div>
+                
+            </a>
+              </div>
+    </div>
+</div>
+</div>
+<!-- Section (2) -->
+<div class="list-wrap dt-card-popular-games-24h" style="margin-bottom: 10px;">
+<div class="apk-list-with-download showBadge"> 
+ <div class="left">
+    <div class="module discover">
+        
+        <div class="mp3-list-1001 no-scrollbar enable-wrap">
+                    <a class="mp3" title="Sanak Badshah 3:00 AM Sessions" href="New Release/We-Made-it.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Sanak Badshah 3:00 AM Sessions"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="New Release/icons/badshah.webp"
+                        data-srcset="new release/icons/badshah.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Sanak Badshah 3:00 AM Sessions</div>
+                
+            </a>
+        <a class="mp3" title="Still Rollin SHUBH Punjabi Song 2023" href="New Release/Sanak.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Still Rollin SHUBH Punjabi Song 2023"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="New Release/icons/subh.webp"
+                        data-srcset="New Release/icons/subh.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Still Rollin SHUBH Punjabi Song 2023</div>
+                
+            </a>
+        <a class="mp3" title="Kya Bolti Public Emiway Bantai" href="New Release/Kya-Bolti-Public.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Kya Bolti Public Emiway Bantai"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="New Release/icons/emiway.webp"
+                        data-srcset="New Release/icons/emiway.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Kya Bolti Public Emiway Bantai</div>
+                
+            </a>
+        <a class="mp3" title="Hasti reh Tu paradox 2023" href="New Release/Hasti-reh-Tu.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Hasti reh Tu paradox 2023"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="New Release/icons/paradox.webp"
+                        data-srcset="New Release/icons/paradox.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Hasti reh Tu paradox 2023</div>
+                
+            </a>
+            <a class="mp3" title="Tell me Once Yo Yo Honey Singh" href="New Release/Tell-Me-Once.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Tell me Once Yo Yo Honey Singh"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="New Release/icons/honey1.webp"
+                        data-srcset="New Release/icons/honey1.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Tell me Once Yo Yo Honey Singh</div>
+                
+            </a>
+            
+            <a class="mp3" title="Two Tone Young Stunners 2023" href="New Release/Two-Tone.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Two Tone Young Stunners 2023"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="New Release/icons/young.webp"
+                        data-srcset="New Release/icons/young.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Two Tone Young Stunners 2023</div>
+            </a>
+            <a class="mp3" title="Haryana Hood Irshad Khan" href="New Release/Haryana-Hood.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Haryana Hood Irshad Khan"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="New Release/icons/irshad.webp"
+                        data-srcset="New Release/icons/irshad.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Haryana Hood Irshad Khan</div>
+                
+            </a>
+            <a class="mp3" title="Busy Getting Paid Divine Ammy virk" href="New Release/Busy-Getting-Paid.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Busy Getting Paid Divine Ammy virk"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="New Release/icons/divine.webp"
+                        data-srcset="New Release/icons/divine.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Busy Getting Paid Divine Ammy virk</div>
+                
+            </a>
+            </div>
+            </div>
+            </div>
+            </div>
+<!-- Section (3) -->
+<div class="list-wrap dt-card-popular-games-24h" style="margin-bottom: 10px;">
+<div class="apk-list-with-download showBadge"> 
+ <div class="left">
+    <div class="module discover">
+        <div class="mp3-list-1001 no-scrollbar enable-wrap">
+          
+            <a class="mp3" title="Headline Singga Dj flow 2023" href="New Release/Headline.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Headline Singga Dj flow 2023"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="New Release/icons/djflow.webp"
+                        data-srcset="New Release/icons/djflow.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Headline Singga Dj flow 2023</div>
+                
+            </a>
+            <a class="mp3" title="Chhod Dala Emiway Bantai" href="New Release/Chhod-Dala.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Chhod Dala Emiway Bantai"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="New Release/icons/emiway1.webp"
+                        data-srcset="New Release/icons/emiway1.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Chhod Dala Emiway Bantai</div>
+                
+            </a>
+            <a class="mp3" title="Scene Change Emiway Bantai" href="New Release/Scene-Change.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Scene Change Emiway Bantai"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="New Release/icons/emiway2.webp"
+                        data-srcset="New Release/icons/emiway2.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Scene Change Emiway Bantai</div>
+                
+            </a>
+            <a class="mp3" title="HATH VARTI MC STAN" href="https://www.mp3play.store/New%20Release/HATH-VARTI.html#gsc.tab=0">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="HATH VARTI MC STAN"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="https://github.com/Mp3playpro/Mp3playpro/raw/main/New%20Release/icons/mcstan1.webp"
+                        data-srcset="https://github.com/Mp3playpro/Mp3playpro/raw/main/New%20Release/icons/mcstan1.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">HATH VARTI MC STAN</div>
+                
+            </a>
+            <a class="mp3" title="Classy Chapri" href="https://www.mp3play.store/New%20Release/Classy-Chapri.html#gsc.tab=0">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Classy Chapri"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="New Release/icons/emiwayx.webp"
+                        data-srcset="New Release/icons/emiwayx.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Classy Chapri Emiway Banati 2023</div>
+                
+            </a>
+            <a class="mp3" title="Zihaal e Miskin" href="https://www.mp3play.store/New%20Release/Zihaal-e-Miskin.html#gsc.tab=0">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Zihaal e Miskin"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="New Release/icons/zahaal.webp"
+                        data-srcset="New Release/icons/zahaal.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Zihaal e Miskin Javed-Mohsin 2023</div>
+                
+            </a>
+            <a class="mp3" title="Kaali Car" href="https://www.mp3play.store/New%20Release/Kaali-Car.html#gsc.tab=0">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Kaali Car"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="https://github.com/Mp3playpro/Mp3playpro/raw/main/New%20Release/icons/kaka1.webp"
+                        data-srcset="https://github.com/Mp3playpro/Mp3playpro/raw/main/New%20Release/icons/kaka1.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Kaali Car Kaka Released 2023</div>
+                
+            </a>
+            <a class="mp3" title="HAAL Harnoor" href="https://www.mp3play.store/New%20Release/HAAL.html#gsc.tab=0">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="HAAL Harnoor"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="https://github.com/Mp3playpro/Mp3playpro/raw/main/New%20Release/icons/Harnoor.webp"
+                        data-srcset="https://github.com/Mp3playpro/Mp3playpro/raw/main/New%20Release/icons/Harnoor.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">HAAL Harnoor Released 2023</div>
+                
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div> 
+</div>
+</div>
+<!-- Section (Popular Songs) -->
+<div class="list-wrap dt-card-popular-apps-24h" style="margin-bottom: 10px;">
+<div class="apk-list-with-download showBadge">
+<div class="home-prefecture">
+<div class="home-prefecture-head">
+<div class="common-title">
+<div class="common-title-content">
+<div class="common-title-content-name">
+<div class="font-common-line-1">
+<p style="font-weight: 900;border-bottom: 3px solid #24cd77;font-size: 15px;font-family: Helvetica;
+  display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trending-up"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg> Popular Songs</p>
+</div>
+</div>
+<a href="#" class="beautify" style="
+  width:20px;
+  
+  font-size: 18px;
+  background: 
+  line-height: 30px;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  
+  background:#f0f8ff;
+  border-radius: 30%;
+  "> »
+</a>
+</div>
+</div>
+</div>
+<br/>
+<div class="left">
+    <div class="module discover">
+        
+        <div class="mp3-list-1001 no-scrollbar enable-wrap">
+            <a class="mp3" title="Spain Jassa Dhillon 2023" href="Most Popular/Spain.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Spain Jassa Dhillon 2023"
+                 
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="Most Popular/icons/jassa.webp"
+                        data-srcset="Most Popular/icons/jassa.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Spain Jassa Dhillon 2023</div>
+                
+            </a>
+                    <a class="mp3" title="Manike Sidharth Malhotra 2023" href="Most Popular/Manike.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Manike Sidharth Malhotra 2023"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="Most Popular/icons/manike.webp"
+                        data-srcset="Most Popular/icons/manike.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Manike Sidharth Malhotra 2023</div>
+                
+            </a>
+        <a class="mp3" title="Company Emiway Bantai 2023" href="Most Popular/Company.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Company Emiway Bantai 2023"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="Most Popular/icons/emiway3.webp"
+                        data-srcset="Most Popular/icons/emiway3.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Company Emiway Bantai 2023</div>
+                
+            </a>
+        <a class="mp3" title="Clam Down Rema album Rave &amp; Roses" href="Most Popular/Clam-Down.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Clam Down Rema album Rave &amp; Roses"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="Most Popular/icons/rema.webp"
+                        data-srcset="Most Popular/icons/rema.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Clam Down Rema album Rave &amp; Roses</div>
+                
+            </a>
+        <a class="mp3" title="Do you know Diljit Dosanjh popular songs" href="Most Popular/Do-you-know.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Do you know Diljit Dosanjh popular songs"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="Most Popular/icons/diljit.webp"
+                        data-srcset="Most Popular/icons/diljit.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Do you know Diljit Dosanjh popular songs</div>
+                
+            </a>
+        <a class="mp3" title="No Love SHUBH popular song 2022" href="Most Popular/No-Love.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="No Love SHUBH popular song 2022"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="Most Popular/icons/subh.webp"
+                        data-srcset="Most Popular/icons/subh.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">No Love SHUBH popular song 2022</div>
+                
+            </a>
+        <a class="mp3" title="Baazigar Divine Popular Song " href="Most Popular/Baazigar.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Baazigar Divine Popular Song "
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="Most Popular/icons/divine.webp"
+                        data-srcset="Most Popular/icons/divine.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Baazigar Divine Popular Song </div>
+                
+            </a>
+                    <a class="mp3" title="Shape Kaka Popular Song 2023" href="Most Popular/Shape.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Shape Kaka Popular Song 2023"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="Most Popular/icons/shape.webp"
+                        data-srcset="Most Popular/icons/shape.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Shape Kaka Popular Song 2023</div>
+                
+            </a>
+            </div>
+    </div>
+</div>
+</div>
+
+            <!-- Section (2) -->
+            <div class="list-wrap dt-card-popular-games-24h" style="margin-bottom: 10px;">
+<div class="apk-list-with-download showBadge"> 
+ <div class="left">
+    <div class="module discover">
+        
+        <div class="mp3-list-1001 no-scrollbar enable-wrap">
+                    <a class="mp3" title="Moon Rise Guru Randhawa 2022 Album" href="Most Popular/Moon-Rise.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Moon Rise Guru Randhawa 2022 Album"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="Most Popular/icons/guru.webp"
+                        data-srcset="Most Popular/icons/guru.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Moon Rise Guru Randhawa 2022 Album</div>
+                
+            </a>
+            
+        <a class="mp3" title="No Reason Permish Verma 2023" href="Most Popular/No-Reason.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="No Reason Permish Verma 2023"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="Most Popular/icons/permish.webp"
+                        data-srcset="Most Popular/icons/permish.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">No Reason Permish Verma 2023</div>
+                
+            </a>
+        <a class="mp3" title="Terre Pyaar Mein Himesh Reshammiya" href="Most Popular/Terre-Pyaar-Mein.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Terre Pyaar Mein Himesh Reshammiya"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="Most Popular/icons/himesh.webp"
+                        data-srcset="Most Popular/icons/himesh.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Terre Pyaar Mein Himesh Reshammiya</div>
+                
+            </a>
+        <a class="mp3" title="Genda Phool Badshah Popular Song" href="Most Popular/Genda-Phool.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Genda Phool Badshah Popular Song"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="Most Popular/icons/badshah.webp"
+                        data-srcset="Most Popular/icons/badshah.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Genda Phool Badshah Popular Song</div>
+                
+            </a>
+            <a class="mp3" title="Rooh E Daari Altamash Faridi Popular" href="Most Popular/Rooh-E-Daari.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Rooh E Daari Altamash Faridi Popular"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="Most Popular/icons/rooh.webp"
+                        data-srcset="Most Popular/icons/rooh.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Rooh E Daari Altamash Faridi Popular</div>
+                
+            </a>
+            
+            <a class="mp3" title="Kuch Sala Bad Yaara Gurnam Bhullar" href="Most Popular/Kuch-Sala-Bad-Yaara.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Kuch Sala Bad Yaara Gurnam Bhullar"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="Most Popular/icons/gurnam.webp"
+                        data-srcset="Most Popular/icons/gurnam.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Kuch Sala Bad Yaara Gurnam Bhullar</div>
+            </a>
+            <a class="mp3" title="Flowers Miley Cyrus Popular 2022" href="Most Popular/Flowers.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Flowers Miley Cyrus Popular 2022"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="Most Popular/icons/rose.webp"
+                        data-srcset="Most Popular/icons/rose.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Flowers Miley Cyrus Popular 2022</div>
+                
+            </a>
+            <a class="mp3" title="Bashrarm Rang Pathan movie popular song" href="Most Popular/Bashrarm-Rang.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Bashrarm Rang Pathan movie popular song"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="Most Popular/icons/srk.webp"
+                        data-srcset="Most Popular/icons/srk.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Bashrarm Rang Pathan movie popular song</div>
+                
+            </a>
+            </div>
+    </div>
+</div>
+</div>
+
+            <!-- Section (3) -->
+            <div class="list-wrap dt-card-popular-games-24h" style="margin-bottom: 10px;">
+<div class="apk-list-with-download showBadge"> 
+ <div class="left">
+    <div class="module discover">
+        
+        <div class="mp3-list-1001 no-scrollbar enable-wrap">
+            <a class="mp3" title="Hookah Bar Akshay Kumar &amp; Himesh Reshammiya " href="Most Popular/Hookah-Bar.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Hookah Bar Akshay Kumar &amp; Himesh Reshammiya "
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="Most Popular/icons/akshay.webp"
+                        data-srcset="Most Popular/icons/akshay.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Hookah Bar Akshay Kumar &amp; Himesh Reshammiya </div>
+                
+            </a>
+            
+            <a class="mp3" title="Ek Din Pyaar Mc Stan popular song" href="Most Popular/Ek-Din-Pyaar.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Ek Din Pyaar Mc Stan popular song"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="Most Popular/icons/mcstan.webp"
+                        data-srcset="Most Popular/icons/mcstan.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Ek Din Pyaar Mc Stan popular song</div>
+                
+            </a>
+            <a class="mp3" title="Agency Talha anjum &amp; Rap Demon" href="Most Popular/Agency.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Agency Talha anjum &amp; Rap Demon"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="Most Popular/icons/talha.webp"
+                        data-srcset="Most Popular/icons/talha.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Agency Talha anjum &amp; Rap Demon</div>
+                
+            </a>
+            <a class="mp3" title="Tu Aake Dekhle King Popular 2022" href="Most Popular/Tu-Aake-Dekhle.html">
+                <div class="img-ratio">
+                    <img
+                        class="icon lazy"
+                        alt="Tu Aake Dekhle King Popular 2022"
+                        src="https://www.mp3play.store/images/logo.webp"
+                        data-original="Most Popular/icons/king.webp"
+                        data-srcset="Most Popular/icons/king.webp"
+                        width="102"
+                        height="102"
+                    />
+                </div>
+                <div class="name double-lines">Tu Aake Dekhle King Popular 2022</div>
+                
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div> 
+</div>
+</div>
+
+<div class="home-prefecture">
+<div class="home-prefecture-head">
+<div class="common-title">
+<div class="common-title-content">
+<div class="common-title-content-name">
+<div class="font-common-line-1">
+<p style="font-weight: 900;border-bottom: 3px solid #24cd77;font-size: 15px;font-family: Helvetica;
+  display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trending-up"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg> Popular Ringtone</p>
+</div>
+</div>
+<a href="#" class="beautify" style="
+  width:20px;
+  
+  font-size: 18px;
+  background: 
+  line-height: 30px;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  background:	#f0f8ff;
+  border-radius: 30%;
+  "> »
+</a>
+</div>
+</div>
+</div>
+<div class="home-prefecture-content">
+<div class="common-regional-block crosswise-block-carousel">
+<div class="common-regional-block-content type-original">
+<div class="common-regional-block-content-alignment">
+<a href="Popular Ringtone/Rona-Day.html" class="beautify">
+<div class="common-regional-block-content-item">
+<div class="common-regional-block-item-img">
+<img  class="lazy1" data-original="images/ring.jpg" src="images/logo.webp" alt="soon" title="soon">
+</div>
+<div class="common-regional-block-item-expound">
+<div>Rona Day Aj Hum Ko Tu ankha Sujana day</div>
+</div>
+</div>
+</a>
+<a href="Popular Ringtone/Tum-Mile-Dil-Khile.html" class="beautify">
+<div class="common-regional-block-content-item">
+<div class="common-regional-block-item-img">
+<img  class="lazy1" data-original="images/ring.jpg" src="images/logo.webp" alt="soon" title="soon">
+</div>
+<div class="common-regional-block-item-expound">
+<div> Tum Mile Dil Khile Instrumental</div>
+</div>
+</div>
+</a>
+<a href="Popular Ringtone/Kgf-Karuvinil-Enai.html" class="beautify">
+<div class="common-regional-block-content-item">
+<div class="common-regional-block-item-img">
+<img  class="lazy1" data-original="images/ring.jpg" src="images/logo.webp" alt="soon" title="soon">
+</div>
+<div class="common-regional-block-item-expound">
+<div>Kgf Karuvinil Enai Popular</div>
+</div>
+</div>
+</a>
+<a href="Popular Ringtone/Lord-Krishna-Flute.html" class="beautify">
+<div class="common-regional-block-content-item">
+<div class="common-regional-block-item-img">
+<img  class="lazy1" data-original="images/ring.jpg" src="images/logo.webp" alt="soon" title="soon">
+</div>
+<div class="common-regional-block-item-expound">
+<div>Lord Krishna Flute Popular</div>
+</div>
+</div>
+</a>
+<a href="Popular Ringtone/New-Bollywood-Instrumental.html" class="beautify">
+<div class="common-regional-block-content-item">
+<div class="common-regional-block-item-img">
+<img  class="lazy1" data-original="images/ring.jpg" src="images/logo.webp" alt="soon" title="soon">
+</div>
+<div class="common-regional-block-item-expound">
+<div>New Bollywood Popular Instrumental</div>
+</div>
+</div>
+</a>
+<a href="Popular Ringtone/Joker-Ringtone.html" class="beautify">
+<div class="common-regional-block-content-item">
+<div class="common-regional-block-item-img">
+<img  class="lazy1" data-original="images/ring.jpg" src="images/logo.webp" alt="soon" title="soon">
+</div>
+<div class="common-regional-block-item-expound">
+<div>Best Joker Ringtone 2019</div>
+</div>
+</div>
+</a>
+<a href="Popular Ringtone/Let-Me-Love-You.html" class="beautify">
+<div class="common-regional-block-content-item">
+<div class="common-regional-block-item-img">
+<img  class="lazy1" data-original="images/ring.jpg" src="images/logo.webp" alt="soon" title="soon">
+</div>
+<div class="common-regional-block-item-expound">
+<div>Let Me Love You Popular Instrument</div>
+</div>
+</div>
+</a>
+<a href="Popular Ringtone/Rahna-He-Tere-Dil-Mein-Flute.html" class="beautify">
+<div class="common-regional-block-content-item">
+<div class="common-regional-block-item-img">
+<img  class="lazy1" data-original="images/ring.jpg" src="images/logo.webp" alt="soon" title="soon">
+</div>
+<div class="common-regional-block-item-expound">
+<div>Rahna He Tere Dil Mein Flute</div>
+</div>
+</div>
+</a>
+
+<a href="Popular Ringtone/Tik-Tok-Flute.html" class="beautify">
+<div class="common-regional-block-content-item">
+<div class="common-regional-block-item-img">
+<img  class="lazy1" data-original="images/ring.jpg" src="images/logo.webp" alt="soon" title="soon">
+</div>
+<div class="common-regional-block-item-expound">
+<div>Tik Tok Flute most popular mp3</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+		<!-- Footer  --><br/><br/>
+<footer class="footer-distributed">
+<div class="footer-right">
+<a href="https://www.facebook.com/somiawan29"><img src="social/facebook.png" alt="Facebook" width="25" height="25"/></a>
+<a href="https://youtube.com/channel/UC9XSn4TgxU-arst3ifPvw"><img src="social/youtube.png" alt="Facebook" width="25" height="25"/></a>
+<a href="mailto:bboy83702@gmail.com"><img src="social/email.png" alt="Facebook" width="25" height="25"/></a>
+<a href="https://github.com/worldapk"><img src="social/github.png" alt="Facebook" width="25" height="25"/></a>
+</div>
+<div class="footer-left">
+<p class="footer-links">
+<a href="https://www.mp3play.store/about/about.html">About Us |</a>
+<a href="https://www.mp3play.store/about/privacy-policy.html">Pivacy policy |</a>
+<a href="https://www.mp3play.store/about/dmca.html">DMCA |</a>
+<a href="https://www.mp3play.store/about/terms.html">Terms &amp; condition</a>
+</p>
+<p>Copyright © 2022-2023 Mp3Play All rights reserved. </p>
+</div>
+</footer>
+<script src="https://www.mp3play.store/static.mp3play.com/mobile/static/js/jquery.3.6.0.min.js" crossorigin="anonymous" type="text/javascript"></script>
+<script src="https://www.mp3play.store/static.mp3play.com/mobile/static/js/lazyload-11.0.6.min.js" crossorigin="anonymous" type="text/javascript"></script>
+<script src="https://www.mp3play.store//language_v1034.js?hl=en" type="text/javascript"></script>
+<script src="https://www.mp3play.store/static.mp3play.com/mobile/static/js/global_v1249.min.js" crossorigin="anonymous" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="static.mp3play.com/mobile/static/css/base64_v1249.css" />
+<script src="https://www.mp3play.store/static.mp3play.com/mobile/static/js/touchslide.fix.min.js" crossorigin="anonymous" type="text/javascript"></script>
+<script type="text/template" id="home-lazy-ad">
+</script>
+  <script  src="./script.js"></script>
+</body>
+</html>
