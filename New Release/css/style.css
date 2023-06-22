@@ -1100,12 +1100,10 @@ th {
 }
 .rounded-lg {
   border-radius: 0.3rem !important;
-  width: 100%;
-  max-height: 150px;
+  width:100%;
 }
 .d-block {
   display: block !important;
-  
 }
 .d-flex {
   display: -ms-flexbox !important;
@@ -1851,3 +1849,8 @@ svg{
   margin: 0px 20px 20px 0px;
   
 }
+#play-pause-button{
+  font-size: 50px;
+  cursor: pointer;
+}
+	
