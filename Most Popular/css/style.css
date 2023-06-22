@@ -1100,9 +1100,7 @@ th {
 }
 .rounded-lg {
   border-radius: 0.3rem !important;
-  object-fit: cover;
-  width: 100%;
-  
+  width:100%;
 }
 .d-block {
   display: block !important;
@@ -1843,6 +1841,7 @@ a:active {
 svg{
 	color: green;
 	}
+	
 .share-button {
   position: fixed;
   bottom: 0px;
@@ -1850,3 +1849,8 @@ svg{
   margin: 0px 20px 20px 0px;
   
 }
+#play-pause-button{
+  font-size: 50px;
+  cursor: pointer;
+}
+	
