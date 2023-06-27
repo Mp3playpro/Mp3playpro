@@ -1,7 +1,7 @@
 
 <!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=function(){var e=0,i=0,t=[],n=!1,o=[],s=[],r=!0,a=function(e,i,n,o,s,r,a){var l=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,c=this;this.name=e,this.funcName=i,this.parameters=null===n?null:p(n)?n:[n],this.isBlock=o,this.blockedBy=s,this.deleteWhenComplete=r,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.fWindow=l,this.isTimeDelay=!1,this.process=function(){f("... func = "+e),c.isInitialized=!0,c.isComplete=!0,f("... func.apply: "+e);var i=c.funcName.split("."),n=null,o=this.fWindow||window;i.length>3||(n=3===i.length?o[i[0]][i[1]][i[2]]:2===i.length?o[i[0]][i[1]]:o[c.funcName]),null!=n&&n.apply(null,this.parameters),!0===c.deleteWhenComplete&&delete t[e],!0===c.isBlock&&(f("----- F'D: "+c.name),u())}},l=function(e,i,t,n,o,s,r){var a=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,l=this;this.name=e,this.path=i,this.async=o,this.defer=s,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=r,this.fWindow=a,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)?window.__ezScriptHost+e:e},this.process=function(){l.isInitialized=!0,f("... file = "+e);var i=this.fWindow?this.fWindow.document:document,t=i.createElement("script");t.src=this.getSrc(this.path),!0===o?t.async=!0:!0===s&&(t.defer=!0),t.onerror=function(){f("----- ERR'D: "+l.name),l.isError=!0,!0===l.isBlock&&u()},t.onreadystatechange=t.onload=function(){var e=t.readyState;f("----- F'D: "+l.name),e&&!/loaded|complete/.test(e)||(l.isComplete=!0,!0===l.isBlock&&u())},i.getElementsByTagName("head")[0].appendChild(t)}},c=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function d(e){!0!==h(e)&&0!=r&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return f(e.name+" blocked = TIME DELAY!"),!0;if(p(e.blockedBy))for(var i=0;i<e.blockedBy.length;i++){var o=e.blockedBy[i];if(!1===t.hasOwnProperty(o))return f(e.name+" blocked = "+o),!0;if(!0===e.proceedIfError&&!0===t[o].isError)return!1;if(!1===t[o].isComplete)return f(e.name+" blocked = "+o),!0}return!1}function f(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function u(){++e>200||(f("let's go"),m(o),m(s))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?f(t.name+": error"):!0===t.isComplete?f(t.name+": complete already"):!0===t.isInitialized&&f(t.name+": initialized already"):t.process()}}function p(e){return"[object Array]"==Object.prototype.toString.call(e)}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,f("TDELAY -----"),u()}),5e3)}),!1),{addFile:function(e,i,n,r,a,c,h,f,u){var m=new l(e,i,n,r,a,c,h,u);!0===f?o[e]=m:s[e]=m,t[e]=m,d(m)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,f(e+" ...  FILE! TDELAY"),s[e]=n,t[e]=n,d(n)},addFunc:function(e,n,r,l,c,h,f,u,m,p){!0===h&&(e=e+"_"+i++);var y=new a(e,n,r,l,c,f,u,p);!0===m?o[e]=y:s[e]=y,t[e]=y,d(y)},addDelayFunc:function(e,i,n){var o=new a(e,i,n,!1,[],!0,!0);o.isTimeDelay=!0,f(e+" ...  FUNCTION! TDELAY"),s[e]=o,t[e]=o,d(o)},items:t,processAll:u,setallowLoad:function(e){r=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?f(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new c(e,!0);f("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};!function(){var e;__ez.vep=(e=[],{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("/detroitchicago/grapefruit.gif")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer></script>
-<title>Download Lattest Popular Songs easily | mp3play.store</title>
+<title>Play Your Favorite Songs Anytime, Anywhere | mp3play.store</title>
 <meta name="keywords" content="download lattest mp3 songs, mp3 download, popular mp3 songs download, lattest mp3 songs download, essy mp3 songs download"/>
 <meta name="description" content="Download Mp3play New Bollywood Mp3 Songs, Punjabi, Indipop Songs, New Dj Remix and Latest High Quality Mobile mp3 Songs Download"/>
 <meta property="og:image" content="static.mp3play.com/mobile/static/imgs/screen1.jpg"/>
@@ -9,13 +9,13 @@
 <link rel="alternate" href="https://www.mp3play.store" hreflang="x-default"/>
 <link rel="alternate" href="https://www.mp3play.store" hreflang="en"/>
 <meta property="og:site_name" content="mp3play"/>
-<meta property="og:title" content="Download Lattest Popular Songs easily | mp3play.store"/>
+<meta property="og:title" content="Play Your Favorite Songs Anytime, Anywhere | mp3play.store"/>
 <meta property="og:type" content="website"/>
 <meta name="theme-color" content="#23a86b"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="apple-mobile-web-app-capable" content="yes"/>
 <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-<meta name="apple-mobile-web-app-title" content="mp3play"/>
+<meta name="apple-mobile-web-app-title" content="Play Your Favorite Songs Anytime, Anywhere | mp3play.store"/>
 <meta name="format-detection" content="telephone=no"/>
 <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4560230436799571" crossorigin="anonymous"></script>
 <!-- Google tag (gtag.js) -->
@@ -125,10 +125,9 @@
         ]
     }
 </script>
+
 <script type="text/javascript">
-
         var dt_enable_adsense = '1';
-
     </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/><script type="text/javascript">var ezouid = "1";</script><base href="https://www.mp3play.store/"><script type='text/javascript'>
 var ezoTemplate = 'old_site_mobile_noads';
@@ -217,7 +216,7 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", ["8b3f5166-66b8-4476-4bef-3
 <a href="about/dmca.html">
 <div class="menu-layer">
 <i class="fa fa-copyright w3-text-teal" style="font-size:30px"></i>
-<span class="menu-text">DMCA</span>
+<span class="menu-text">Disclaimer</span>
 </div>
 </a>
 </li>
@@ -343,6 +342,7 @@ function closeNav() {
                 </div>
                 <div class="swiper-slide">
                     <div class="blog-slider__imgs">
+                    	
                         <img class="back-image" alt="" src="Most Popular/icons/emiway3.webp"/>
                         <div class="movie-image-container">
 
@@ -478,8 +478,8 @@ var swiper = new Swiper(".blog-slider", {
         <a href="Popular Ringtone/YouTube-Audio-Downloader.html" rel="noopener" target="_blank">
             <img class="icon" alt="Use mp3play YouTube audio converter" src="https://github.com/Mp3playpro/Mp3playpro/blob/main/images/youtube-music-vector-graphics-youtube-music-computer-icons-youtube-7ab4a9dab1224288487076b7d6e03f29.png?raw=true" width="40" height="40" />
             <div class="text">
-                <div class="name one-line">YouTube Mp3 Downloader<span class="score">Free</span></div>
-                <div class="desc">Download YouTube Video To Mp3</div>
+                <div class="name one-line">YouTube Mp3 <span class="score">Free</span></div>
+                <div class="desc"> YouTube Video To Mp3</div>
             </div>
             <div class="button">
                 Try Now »
@@ -1307,6 +1307,7 @@ style="font-weight: 900;border-bottom: 3px solid #24cd77;font-size: 15px;font-fa
  </div>
 </div>
 
+ 
 
 		<!-- Footer  -->
 <footer class="footer-distributed">
@@ -1327,11 +1328,14 @@ style="font-weight: 900;border-bottom: 3px solid #24cd77;font-size: 15px;font-fa
 <p style="white-space: nowrap; font-size:12px;">Copyright © 2023 Mp3Play All rights reserved. </p>
 </div>
 </footer>
+<!-- End Footer  -->
+
 <script src="https://www.mp3play.store/static.mp3play.com/mobile/static/js/jquery.3.6.0.min.js" crossorigin="anonymous" type="text/javascript"></script>
 <script src="https://www.mp3play.store/static.mp3play.com/mobile/static/js/lazyload-11.0.6.min.js" crossorigin="anonymous" type="text/javascript"></script>
 <script src="https://www.mp3play.store/static.mp3play.com/mobile/static/js/global_v1249.min.js" crossorigin="anonymous" type="text/javascript"></script>
 <script type="text/template" id="home-lazy-ad">
 </script>
   <script  src="./script.js"></script>
+ 
 </body>
 </html>
